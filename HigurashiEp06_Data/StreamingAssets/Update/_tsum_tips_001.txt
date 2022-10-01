@@ -1,0 +1,132 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+
+	DrawScene( "white", 400 );
+	PlayBGM( 0, "Iru", 56, 0 );
+	DrawScene( "background/Sora", 400 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　風通しの良さだけは自慢だった。",
+		   NULL, "Uno dei punti forti di casa mia è la ventilazione.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　少なくとも風が吹いている時は、冷房などなくても充分に涼めるのだった。",
+		   NULL, "Basta un soffio di vento e non serve neanche accendere il ventilatore.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大きく開けた窓に干してあった布団を引っ込めると、私はそこに座布団を敷いて、縁側の夕涼みと洒落込むのだった。",
+		   NULL, "Tolgo il futon dal davanzale, metto un cuscino vicino alla finestra aperta e mi godo il fresco della brezza pomeridiana.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　日めくりのカレンダーは昭和の５８年、６月であることを示していた。",
+		   NULL, "Il mio calendario dice che oggi è un giorno di giugno del 1983.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　６月にもかかわらず、今年は空梅雨でもう夏本番の到来のようだった。",
+		   NULL, "Sebbene siamo solo a metà dell'anno, è come se l'estate avesse saltato il periodo delle piogge e fosse già pronta ad accoglierci con l'afa.", Line_WaitForInput);
+
+	OutputLine(NULL, "……異常気象というやつらしい。",
+		   NULL, " ... a quanto pare, non è un evento normale.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　百年に一度の異常気象だったとしても、それが昭和５８年に必ず起こることなら別に珍しいことでもなんでもない。",
+		   NULL, "Se anche si trattasse di un particolare evento atmosferico che si verifica una volta ogni cent'anni, il fatto che avvenga proprio a giugno del 1983 non è poi così sorprendente.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは必然だということ。",
+		   NULL, "Anzi, è inevitabile.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんなことより、下校時に突然振り出す夕立の方が、どれほど予想不能で珍しいことか。",
+		   NULL, "Dall'altra parte, lo scroscio d'acqua improvviso che mi ha colta mentre tornavo a casa è stato assai più imprevedibile.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　全てが何から何まで予定調和の日々だけど。",
+		   NULL, "Ogni giorno passa in completa armonia, come se fosse stato pianificato fin dal principio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何だか今年は色々と幸先がいい気がする。",
+		   NULL, "Sento che quest'anno succederà qualcosa di bello.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…何て言うのかな。",
+		   NULL, "... come posso dire...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　スゴロクゲームで一番最初のサイコロで６が出て、自分ひとりだけたくさんのリードで始まった時のようないい気分、というのかな。",
+		   NULL, "È come se sentissi di aver fatto sei sul primo lancio del dado, accumulando un enorme vantaggio sugli altri giocatori.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もっとも、サイコロというのは振れば振るほど、そのトータルは平均値に近付く。",
+		   NULL, "Quando parliamo di dadi, più volte ne lanciamo e più il totale segue la media.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私たちの人生は日々、あらゆるところでサイコロをたくさん投げている。",
+		   NULL, "In realtà, tiriamo il dado in moltissime occasioni durante la nostra vita.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、ささやかな幸運の１つ程度で浮かれることもないのだけど。",
+		   NULL, "Quindi non è che un raro colpo di fortuna sia un evento di cui rallegrarsi più del dovuto.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……最初のサイコロが６でも次が１なら、７で、平均値。",
+		   NULL, "... se faccio sei al primo lancio e uno al secondo, il totale diventa sette.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　運命主義者なら、次に出るサイコロは１の確率が高いとでも言い出すのか。",
+		   NULL, "Per chi crede nel destino, potremmo dire che è molto più probabile che sia l'uno a spuntare sulla faccia superiore del dado.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、次に振るサイコロは１から６まで何が出るかわからない。",
+		   NULL, "Ma la verità è che nessuno può prevedere il risultato.", Line_WaitForInput);
+	OutputLine(NULL, "それが、運命というもの。",
+		   NULL, " Questo è il destino.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……次も６が出るかもしれないな。",
+		   NULL, "... potrebbe uscire un altro sei.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　全体で見れば３６分の１の奇跡だけど、…１つ１つ積み立てて行こうと思えば、たったの６分の１程度の奇跡でしかないのだから。",
+		   NULL, "Le probabilità di fare due volte sei di fila sono una su trentasei... ma guardando ogni lancio come a sé stante, il miracolo avviene solo una volta su sei.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　沙都子が昨日くくりつけたガラス風鈴が、とても涼しい音色を聞かせてくれるのだった…。",
+		   NULL, "Il tintinnio del fuurin di vetro appeso da Satoko è davvero rinfrescante...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+
+}

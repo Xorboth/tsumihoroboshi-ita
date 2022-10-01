@@ -1,0 +1,88 @@
+{
+    "0": [
+        {
+            "Id": 24,
+            "Script": "_tsum_tips_001",
+            "Title": "Bel Tempo",
+            "TitleJp": "いいお天気"
+        },
+        {
+            "Id": 25,
+            "Script": "_tsum_tips_002",
+            "Title": "Biglietto da Visita",
+            "TitleJp": "名刺"
+        },
+        {
+            "Id": 26,
+            "Script": "_tsum_tips_003",
+            "Title": "Il Mio Diario delle Vacanze Estive",
+            "TitleJp": "夏休みの絵日記"
+        },
+        {
+            "Id": 27,
+            "Script": "_tsum_tips_004",
+            "Title": "La Pioggia Sta Arrivando",
+            "TitleJp": "雨雲の予感"
+        },
+        {
+            "Id": 28,
+            "Script": "_tsum_tips_005",
+            "Title": "Prospetto",
+            "TitleJp": "お見積書"
+        },
+        {
+            "Id": 29,
+            "Script": "_tsum_tips_006",
+            "Title": "Il Mio Vino Preferito",
+            "TitleJp": "お気に入りのワイン"
+        },
+        {
+            "Id": 30,
+            "Script": "_tsum_tips_007",
+            "Title": "Lettera dalla Guardia Forestale",
+            "TitleJp": "営林署便り"
+        },
+        {
+            "Id": 31,
+            "Script": "_tsum_tips_008",
+            "Title": "Ordine a Domicilio",
+            "TitleJp": "昼の出前リスト"
+        },
+        {
+            "Id": 32,
+            "Script": "_tsum_tips_009",
+            "Title": "Ordine a Domicilio 2",
+            "TitleJp": "昼の出前リスト２"
+        },
+        {
+            "Id": 33,
+            "Script": "_tsum_tips_010",
+            "Title": "Ordine a Domicilio 3",
+            "TitleJp": "昼の出前リスト３"
+        },
+        {
+            "Id": 34,
+            "Script": "_tsum_tips_011",
+            "Title": "\"Loro\"",
+            "TitleJp": "やつら"
+        },
+        {
+            "Id": 35,
+            "Script": "_tsum_tips_012",
+            "Title": "Perché Ci Siamo Trasferiti a Hinamizawa",
+            "TitleJp": "雛見沢だった訳"
+        },
+        {
+            "Id": 36,
+            "Script": "_tsum_tips_013",
+            "Title": "Ieri Notte",
+            "TitleJp": "前夜"
+        },
+        {
+            "Id": 37,
+            "Script": "_tsum_tips_014",
+            "Title": "Il Copione Scritto dai Demoni",
+            "TitleJp": "悪魔の脚本"
+        }
+    ]
+}

@@ -1,0 +1,278 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, TRUE );
+
+	Wait( 100 );
+
+
+	PlayBGM( 0, "amber", 56, 0 );
+
+	DrawSceneWithMask( "background/moon", "maskc", 1, 0, 300 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100006", 256, TRUE);
+	OutputLine(NULL, "「………………もう、……明日なのです。」",
+		   NULL, "\"...... è... domani.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500048", 256, TRUE);
+	OutputLine(NULL, "「ん？",
+		   NULL, "\"Uhm?", Line_Continue);
+	Wait( 1600 ); // autofix multiline voice
+	OutputLine(NULL, "　………………あぁ、私たちの命日？」",
+		   NULL, " ......... ah, intendi il giorno in cui moriremo?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100007", 256, TRUE);
+	OutputLine(NULL, "「…………今回も、同じ顛末なのです。」",
+		   NULL, "\"...... anche stavolta finirà come al solito.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500049", 256, TRUE);
+	OutputLine(NULL, "「そうかしら。",
+		   NULL, "\"Chi lo sa.", Line_Continue);
+	Wait( 2000 ); // autofix multiline voice
+	OutputLine(NULL, "………よく似てるけど、いろいろと違うところもあったわ。",
+		   NULL, " ... gli eventi sono stati pressoché gli stessi, ma ci sono state alcune cose differenti.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500050", 256, TRUE);
+	OutputLine(NULL, "……圭一、前のことを覚えてたし。」",
+		   NULL, " ... Keiichi, per esempio, ricorda cos'è accaduto in passato.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100008", 256, TRUE);
+	OutputLine(NULL, "「……そんなことはありえないのです。",
+		   NULL, "\"... non è possibile.", Line_Continue);
+	Wait( 2600 ); // autofix multiline voice
+	OutputLine(NULL, "覚えているわけ、いや、知っているわけはないのです。」",
+		   NULL, " Non può ricordare qualcosa. Anzi, non può proprio saperlo fin dall'inizio.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500051", 256, TRUE);
+	OutputLine(NULL, "「くすくすくす…。",
+		   NULL, "\"Ihihih...", Line_Continue);
+	Wait( 3200 ); // autofix multiline voice
+	OutputLine(NULL, "あんたが絶対にありえないと言ってくれればくれるほど、…じゃあこれは本当に奇跡なんだって思えるわね。」",
+		   NULL, " più dici che una cosa è impossibile... e più sento che questo potrebbe essere un vero miracolo.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100009", 256, TRUE);
+	OutputLine(NULL, "「どうせ、今回もおしまいです。」",
+		   NULL, "\"Tanto finirà come sempre.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500052", 256, TRUE);
+	OutputLine(NULL, "「おしまい、かしら。」",
+		   NULL, "\"Come sempre, dici?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100010", 256, TRUE);
+	OutputLine(NULL, "「もうすぐ終わる。",
+		   NULL, "\"Non c'è più tempo.", Line_Continue);
+	Wait( 1800 ); // autofix multiline voice
+	OutputLine(NULL, "全部、終わる。",
+		   NULL, " Tutto finisce...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100011", 256, TRUE);
+	OutputLine(NULL, "……そう、ひぐらしのなく頃に。」",
+		   NULL, " quando piangono le cicale.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………どうせ、もう終わるのだろうか。",
+		   NULL, "... finirà come sempre...?", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　サイコロは、振れば振るほどにその合計を平均値に近付いていく。",
+		   NULL, "Più volte lancio il dado e più il totale seguirà una media.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　１００回も振ったなら、その過程において、６が連続して出るという奇跡があったとしても、全て合計すれば平均値。",
+		   NULL, "Se lanci un dado cento volte, persino se accadesse un miracolo e ottenessi due o tre volte sei di fila, prima o poi il totale si rimetterebbe alla media.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…予定調和に内包されてしまう程度のもの。",
+		   NULL, "... è un puro fatto che segue le leggi della statistica.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、１００回も振ったなら、その下限と上限は１００〜６００にも及ぶ。",
+		   NULL, "Ma quando lanci un dado cento volte, il totale può variare tra 100 e 600.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　振れば振るほどに未来は１つの平均値に集合しようとするのに、",
+		   NULL, "Più volte lo lanci e più è probabile che il totale si attesti intorno a un valore medio.", Line_WaitForInput);
+	OutputLine(NULL, "振れば振るほどに、実は未来の可能性は増えていっている。",
+		   NULL, " Ma la verità è che a ogni lancio corrisponde una nuova, possibile alternativa.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　１００回振るなら約５００通りの未来。",
+		   NULL, "Lanciare un dado 100 volte equivale a 500 futuri diversi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　１０００回振るなら５０００通りの未来。",
+		   NULL, "Lanciare un dado 10000 volte equivale a 5000 futuri diversi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その中の１つには、この終わりのないスゴロクからアガリになる結末もあるのではないか。",
+		   NULL, "Tra questi, forse, ne esiste uno in grado di scrivere la parola fine su questo infinito gioco dei dadi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……圭一が見せた奇跡は、サイコロを振り続けることは決して徒労ではないことを教えてくれる、目の覚めるような出来事。",
+		   NULL, "... Keiichi mi ha mostrato un miracolo, dimostrandomi che continuare a lanciare il dado non è uno sforzo vano.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　平均値なんかに、屈するな。",
+		   NULL, "Mai arrendersi a ciò che segue sempre le regole.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100012", 256, TRUE);
+	OutputLine(NULL, "「……………………………。」",
+		   NULL, "\"............\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500053", 256, TRUE);
+	OutputLine(NULL, "「……………いらつく背中を見せるわね。",
+		   NULL, "\"............ credi che non servirà a nulla, vero?", Line_Continue);
+	Wait( 3300 ); // autofix multiline voice
+	OutputLine(NULL, "……どうせ今回も駄目だろうって、そういう哀愁でいっぱいよ。」",
+		   NULL, " Inutile nasconderlo, perché ce l'hai scritto in faccia.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100013", 256, TRUE);
+	OutputLine(NULL, "「……………………………。」",
+		   NULL, "\"............\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500054", 256, TRUE);
+	OutputLine(NULL, "「……私だって、……どうせ駄目だろうと思ってる…。",
+		   NULL, "\"... anch'io credo... che pure stavolta otterremo lo stesso esito.", Line_Continue);
+	Wait( 5400 ); // autofix multiline voice
+	OutputLine(NULL, "…でもね、最後のサイコロを投げるまで、私は諦めない。",
+		   NULL, " ... ma non mi arrenderò finché non lancerò il dado per l'ultima volta.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500055", 256, TRUE);
+	OutputLine(NULL, "圭一が教えてくれた。",
+		   NULL, " È stato Keiichi a mostrarmelo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500056", 256, TRUE);
+	OutputLine(NULL, "今回は何かが違うの。",
+		   NULL, "A mostrarmi qualcosa di diverso.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500057", 256, TRUE);
+	OutputLine(NULL, "……だからそれを信じてみる。」",
+		   NULL, " ... e io punterò tutto su quella possibilità.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100014", 256, TRUE);
+	OutputLine(NULL, "「……………梨花は、…………本当に強いのです。」",
+		   NULL, "\"...... Rika... sei davvero incredibile.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500058", 256, TRUE);
+	OutputLine(NULL, "「まぁね。",
+		   NULL, "\"Più o meno.", Line_Continue);
+	Wait( 1800 ); // autofix multiline voice
+	OutputLine(NULL, "あんたよりはずっと若いし。」",
+		   NULL, " Ma solo perché sono più giovane di te.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/yhu2", "maskup", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400090", 256, TRUE);
+	OutputLine(NULL, "「………うぅん、",
+		   NULL, "\"...... nnh...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 600 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…むにゃむにゃ……、",
+		   NULL, " yawn.........", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 2300 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………梨花ぁ…？」",
+		   NULL, " Rika...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500059", 256, TRUE);
+	OutputLine(NULL, "「……みー。」",
+		   NULL, "\"... mii.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400091", 256, TRUE);
+	OutputLine(NULL, "「こんな時間に起きてて、",
+		   NULL, "\"Che ci fai ancora in piedi...?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…ふわぁ……、",
+		   NULL, " ... yawn...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "夜更かしは駄目でございましてよぉ…。」",
+		   NULL, " non va bene rimanere svegli fino a tardi...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500060", 256, TRUE);
+	OutputLine(NULL, "「……ごめんなさいなのです。",
+		   NULL, "\"... scusa.", Line_Continue);
+	Wait( 2600 ); // autofix multiline voice
+	OutputLine(NULL, "寝苦しかったので星を見ていただけなのですよ。",
+		   NULL, " Non riuscivo a dormire, così mi sono messa a guardare le stelle.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500061", 256, TRUE);
+	OutputLine(NULL, "もう寝ますです。」",
+		   NULL, " Adesso vado a letto.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400092", 256, TRUE);
+	OutputLine(NULL, "「そうなさいませ………。",
+		   NULL, "\"Brava...", Line_Continue);
+	Wait( 1800 ); // autofix multiline voice
+	OutputLine(NULL, "……おやすみ梨花ぁ……。」",
+		   NULL, " buonanotte, Rika......\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500062", 256, TRUE);
+	OutputLine(NULL, "「……おやすみなのです、沙都子。」",
+		   NULL, "\"... buonanotte, Satoko.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

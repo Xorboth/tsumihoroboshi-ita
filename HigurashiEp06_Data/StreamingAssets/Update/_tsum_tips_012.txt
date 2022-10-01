@@ -1,0 +1,284 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, TRUE );
+
+	Wait( 100 );
+
+
+	PlayBGM( 0, "T1", 56, 0 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あれは、何年前だったかな。",
+		   NULL, "Non ricordo quanti anni siano passati.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/hi1", "maskc", 1, 0, 1300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ある田舎の自然が綺麗な村があってね。",
+		   NULL, "C'era questo splendido villaggio immerso nel verde.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そこがダムに沈むとか何とかで住民運動があったんだ。",
+		   NULL, "Ma stava per essere sommerso a causa della costruzione di una nuova diga, quindi gli abitanti stavano protestando con furore.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その住民団体が、豊かな自然を知ってもらおうと、大自然ウォッチングという名のツアーを開催していたことがあってね。",
+		   NULL, "In quel periodo, proponevano un giro turistico a chi veniva in visita per mostrar loro le bellezze della natura locale.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　やがてダムに沈むかもしれない、失われていく自然という雰囲気に引かれて、本当に軽い気持ちで参加したんだよ。",
+		   NULL, "Io scelsi di partecipare al tour per pura curiosità, perché volevo vedere ciò che a breve sarebbe stato inondato dall'acqua.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawSceneWithMask( "background/m_hi8", "maskc", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でもね、行って本当に息を呑んだんだよ。",
+		   NULL, "Tuttavia, una volta raggiunto il villaggio, rimasi senza fiato.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そこは本当に空気が透き通っていて、自然が美しい本当に素晴らしいところだったんだ。",
+		   NULL, "L'aria era così fresca, pulita, e il panorama era di una bellezza senza pari.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それ以来、お父さんはあの自然にすっかり虜になってしまっていてなぁ。",
+		   NULL, "Da quel giorno in poi, papà rimase come incantato dalla natura che circondava quel posto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…ダム計画が中止されたと聞いて喜んでたくらいなんだよ。",
+		   NULL, "... anch'io mi innamorai talmente tanto del villaggio al punto da provare un grande sollievo quando il progetto della diga venne interrotto.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawSceneWithMask( "background/ma3", "maskc", 1, 0, 1300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの時、訪れたのがまさに今、家を建てている場所なんだけどね。",
+		   NULL, "Decidemmo che avremmo costruito lì la nostra nuova casa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの時は野花が美しい原っぱだったんだ。",
+		   NULL, "Il giorno in cui andammo a fare il tour, vidi un meraviglioso campo di anemoni.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その原っぱで、二人組の小さな女の子たちが遊んでいたんだ。",
+		   NULL, "C'erano due bambine che giocavano tra i fiori.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　二人とも髪が長くてとても美しい少女たちだった。",
+		   NULL, "Erano entrambe deliziose, con i capelli lunghi e lisci.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ご近所の友達同士だったんだろうね。",
+		   NULL, "Probabilmente erano vicine, oppure migliori amiche.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　幼いながらもきりっとした表情の子と、あどけなさを残す表情の子の顔、今でもよく覚えてるよ。",
+		   NULL, "Ricordo ancora il loro aspetto: una aveva un volto amorevole e un profilo maturo per la sua età, mentre l'altra aveva uno sguardo dolce e innocente.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　どちらも将来、それぞれ個性的な美人になるだろうなぁ。",
+		   NULL, "Sono sicura che siano diventate entrambe delle donne molto affascinanti.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　少女たちはくるくると踊るように走り回ってた。",
+		   NULL, "Correvano per quel prato fiorito come se stessero danzando.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ここは君たちの遊び場なのかいって聞いたらこう言うんだ。",
+		   NULL, "Decisi di chiedere loro se quello fosse il loro posto preferito.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　早くここに引っ越してくる人が現れますように、ってね。",
+		   NULL, "Risposero dicendo che stavano giocando nell'attesa che altre persone si trasferissero al villaggio.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　見ればそこには「別荘地・売出し中」の看板が立っていた。",
+		   NULL, "Lì vidi un cartello con scritto \"In vendita\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その時、あぁ、ここに住んでみるのもいいかもしれないなぁって思ったんだ。",
+		   NULL, "Fu in quel momento che iniziai a pensare che sarebbe stato un bel posto dove vivere.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/Sora5", "maskup", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　確かにここには何もないし、都会での生活に比べると不便かもしれない。",
+		   NULL, "Non c'era quasi niente ed era molto scomodo rispetto alla vita in città.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、……父さんなぁ、家族でもう一度生活をやり直すならここしかないって思ったんだ。",
+		   NULL, "Però... credevo davvero che, per una famiglia, sarebbe stato il posto migliore per iniziare un nuovo cammino.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　前の町では確かにいろいろあったけど、それはもう全部終わったんだから、忘れてしまおう。",
+		   NULL, "Erano successe molte cose laggiù in città... ma il passato è passato, e possiamo solo andare avanti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　過ちから教訓を汲み取り、この村で理想の生活をやり直そう。",
+		   NULL, "Impareremo dai nostri errori, nella speranza di vivere un nuovo inizio in questo villaggio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、圭一がここでの生活を気に入ってくれてると嬉しいんだけどなぁ。",
+		   NULL, "Keiichi, spero che tu cresca e diventi un uomo in grado di amare questo luogo come lo amo io.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…………そうか。",
+		   NULL, "...... davvero?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　気に入ってくれてるなら嬉しい。",
+		   NULL, "Ne sono felice.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　父さんも、ここに引っ越してきてから家族の仲がとてもよくなって嬉しいんだ。",
+		   NULL, "E sono felice anche di aver migliorato di gran lunga il nostro rapporto famigliare da quando siamo arrivati qui.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　前の町では、家族はみんなばらばらだったと思う。",
+		   NULL, "Quando vivevamo in città, intorno a noi c'era il deserto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だから、やり直せて本当によかったと思ってるよ。",
+		   NULL, "... perciò sono veramente lieto di essere riuscito a ricominciare.", Line_WaitForInput);
+	OutputLine(NULL, "こうして、圭一と話をする機会も全然なかったしなぁ。",
+		   NULL, " Ora che ci penso, non ho mai avuto occasione di parlare a cuore aperto con te in questo modo, Keiichi.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そうだ、圭一。",
+		   NULL, "A proposito.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　圭一の学校には、髪の長くて綺麗な二人組の女の子はいないか？",
+		   NULL, "Per caso nella tua classe ci sono due splendide ragazzine con i capelli lunghi?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　年齢は……多分、圭一よりもっと年下だと思うなぁ。",
+		   NULL, "Credo che siano... più piccole di te.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　髪の短い子と長い子ならいる？",
+		   NULL, "Ah, le conosci ma dici che una ha i capelli corti?", Line_WaitForInput);
+	OutputLine(NULL, "　ううん、多分違うと思うなぁ。",
+		   NULL, " Uhm... allora non devono essere loro.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何で探してるかって？",
+		   NULL, "Sai perché te l'ho chiesto?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いやいや、写生のモデルになってもらいたくてねぇ。",
+		   NULL, "In verità, volevo solo chiedere loro se volessero fare da modelle per alcuni dei miei ritratti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlaySE( 0, "s_boyoon", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　色々なコスチュ、げほんげほん！",
+		   NULL, "Con indosso dei costumi e... coff coff!", Line_WaitForInput);
+	OutputLine(NULL, "　と、とにかく芸術的な興味でだよ。",
+		   NULL, " I-insomma, il mio è un puro interesse artistico.", Line_WaitForInput);
+	OutputLine(NULL, "見かけたら父さんにも教えてくれよ。",
+		   NULL, " Perciò, se dovessi incontrarle, ricordati di dirlo a papà, intesi?", Line_WaitForInput);
+	OutputLine(NULL, "きっとだぞー！",
+		   NULL, " Intesi?!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	PlaySE( 0, "s_furu", 56, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 56, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 56, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 56, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 56, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 56, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_daidageki", 56, 64 );
+	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
+	PlaySE( 0, "s_Kyupiin", 56, 64 );
+	DrawScene( "background/furiker_a", 0 );
+	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
+	DrawScene( "black", 400 );
+	PlaySE( 0, "s_Down", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ぐほぐぎぇッ？！",
+		   NULL, " Coff coff!!", Line_Normal);
+
+	ClearMessage();
+
+	DrawSceneWithMask( "background/ma_s1", "maskleft", 1, 0, 300 );
+
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

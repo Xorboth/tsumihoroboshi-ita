@@ -1,0 +1,234 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, TRUE );
+
+	Wait( 100 );
+
+	DrawSceneWithMask( "background/sinryou_sinsatu4", "maskleft", 1, 0, 300 );
+
+	PlayBGM( 0, "depressive paranoia", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "黒田メンタルクリニック殿",
+		   NULL, "      Gentile Clinica Psichiatrica Kuroda", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　前略。",
+		   NULL, "Salve.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まず結論から申し上げて、急性の心的外傷後ストレス障害の一種であると考えられます。",
+		   NULL, "Vado dritto al punto dicendovi che potrebbe trattarsi di un caso acuto di disturbo da stress post-traumatico.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　両親の突然の離婚により、どちらかの親を選択しなければならない葛藤が、患者に強いストレスを与えたものと推測します。",
+		   NULL, "La paziente è vittima di enorme stress causato dal divorzio improvviso dei genitori, costretta a scegliere se vivere con il padre o con la madre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　加えて、患者は両親の離婚に対し自身に責任があると強い思い込みがあり、それが自己破壊願望を助長しているものと思われます。",
+		   NULL, "Perdipiù, è convinta di essere lei stessa la responsabile del divorzio, pensiero che le crea un desiderio crescente di autolesionismo.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　患者にとって最大のショックは、両親の離婚によって、絶対に安全だと心を許していた家庭という居場所に裏切られたことによります。",
+		   NULL, "Lo shock nasce dal senso di tradimento scaturito all'interno dell'ambiente famigliare, che la paziente riteneva essere per sempre un porto sicuro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　よって今後、親子の居場所に対して、偏執的な防衛をする傾向が予想されます。",
+		   NULL, "Di conseguenza, è molto probabile che ricorrerà a misure di difesa psicologica per proteggere la sua famiglia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　（例えば、父親に対して特に異性の接近を嫌う。",
+		   NULL, "(Per esempio, potrebbe provare disprezzo per tutte le persone del sesso opposto che, d'ora in poi, approcceranno suo padre.", Line_WaitForInput);
+	OutputLine(NULL, "自宅に他人を招き入れることを嫌う。",
+		   NULL, " Potrebbe non sentirsi a suo agio in presenza di altre persone a casa sua.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もしくは招き入れられないように何らかの奇抜な行為を行なう可能性もあります。",
+		   NULL, "Nonché mostrare un comportamento eccentrico per tenerle lontane.", Line_WaitForInput);
+	OutputLine(NULL, "事例では、意識せずして自宅内にゴミを溜め込んだケースがあります）",
+		   NULL, " Un esempio riportato in letteratura è quello di persone che accumulano inconsciamente rifiuti in casa.)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まず大切なことは、患者が同居を決めた父親とのコミュニケーションです。",
+		   NULL, "È molto importante che la paziente rimanga in costante comunicazione con il padre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　父親は患者とのコミュニケーションを深めることで、家族仲を一層強めて、その不安を和らげることが何よりも大切となります。",
+		   NULL, "Approfondendo il legame con quest'ultimo, il loro legame faligliare si rinforzerà e allevierà il suo stress.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今回の患者のケースでは、おそらくは急性のものと思われますので、父親の協力があればおそらく、然るべき薬物との併用で、３ヶ月以内に治癒するものと思います。",
+		   NULL, "Dato che la paziente mostra sintomi da stress acuto soltanto in questo caso, è probabile che si riprenderà nell'arco di tre mesi con il supporto del padre e dei medicinali.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ただし、一見治癒したかに見えても、トラウマ体験から１０年以上を経てなお再体験（フラッシュバック）を起こすケースも少なくありません。",
+		   NULL, "Ciononostante, non è raro che pazienti che sembrano essersi ripresi dal trauma abbiano una ricaduta (flashback) persino dopo dieci anni.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　父親はまだ若く、再婚の可能性も将来、充分に残っています。",
+		   NULL, "Suo padre è ancora giovane, perciò è ancora in età per potersi sposare una seconda volta.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ですが、再婚によって見知らぬ異性を見ることは、患者に再体験を引き起こし、回避行為、過覚醒を誘発するものと考えられます。",
+		   NULL, "Conoscere una persona del sesso opposto attraverso un altro matrimonio, tuttavia, potrebbe causare un flashback nella paziente, portandola a comportamenti d'isolazione o di ipercoscienza.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　父親にこの辺りをよく説明し、患者のケアに理解を得るようにしてください。",
+		   NULL, "Vi prego di riferire quanto sopra anche al padre, in modo che capisca il procedimento di recupero.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もしも父親に再婚が内定していた場合、最低でも患者が独立して親離れをするまで打ち明けるべきではありません。",
+		   NULL, "Se il padre decidesse di sposarsi di nuovo, è consigliabile che non riferisca alla paziente la sua decisione finché questa non avrà raggiunto un'età per cui possa vivere in autonomia.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして今回の患者のケースで重要な点は、患者の自傷の原因であると思われる「寄生虫妄想症」には、「文化依存症候群」も関係していると思われる点です。",
+		   NULL, "In parallelo, le cause degli atteggiamenti autolesionisti della paziente, nonché la parassitosi delirante, sembrano fare capo a una sindrome prettamente culturale del luogo.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　患者は郷里の村を離れることで祟りがあると妄信しており、この祟りの結果によって両親が離婚したとしています。",
+		   NULL, "La paziente crede ciecamente che allontanarsi dal villaggio la renderà vittima di una maledizione che, sempre secondo le sue affermazioni, è stata anche  la causa del divorzio dei genitori.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これにより、自己の責任から郷里の祟りに責任を転嫁することで、心的損傷の軽減・防衛を無意識に行なっているものと思います。",
+		   NULL, "Riteniamo che si tratti di un meccanismo psicologico di difesa atto a ridurre il trauma famigliare, spostando il fulcro della colpa da lei stessa alla maledizione del villaggio.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　問題となるのは、この郷里の風習が非常に厳格かつ閉鎖的である点です。",
+		   NULL, "In base a quanto riferitoci dalla paziente, la cultura tradizionale del villaggio è estremamente rigida ed elitaria.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　患者の話によるならば、郷里に戻る以外に祟りから逃れる術はなく、現在の環境に居続ける限り、その祟りは続くとしています。",
+		   NULL, "Pare che l'unico modo per sfuggire alla maledizione sia quello di tornare al villaggio, poiché questa perdurerà finché continuerà ad abitare nella sua città attuale.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これには人格変容の傾向が見られ、以後、現実を改変し続ける高い可能性があります。",
+		   NULL, "Queste conversazioni lasciano intendere un'inclinazione alla schizofrenia, patologia che rischia di alterare la sua percezione della realtà anche in futuro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　（人格変容：人格の低レベル化により現実を改変、妄想化するケースです）",
+		   NULL, "(Schizofrenia: caso clinico in cui il paziente subisce alterazioni della psiche e del comportamento, causando una percezione distorta della realtà e allucinazioni.)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　患者の自傷行為の理由であるとする、血の中に虫が潜んでいるという妄想は、まさにその最たるものと言えるでしょう。",
+		   NULL, "L'idea che nel suo sangue vivano delle larve è un esempio calzante, nonché prima causa del comportamento autolesionista psicosomatico.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　妄想と自傷が関連しているケースは、患者にとって極めて危険な状態であることを意味しています。",
+		   NULL, "È molto pericoloso quando un'illusione sfocia nell'autolesionismo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もしも父親に経済的な余裕があるならば郷里への引越し。",
+		   NULL, "Consiglio caldamente al padre di trasferirsi di nuovo al villaggio, se economicamente in grado.", Line_WaitForInput);
+	OutputLine(NULL, "もしくは郷里の親類の下へ患者の生活環境を移すことも重要なポイントになると思われます。",
+		   NULL, " Permettere alla paziente di vivere insieme al genitore e ai parenti che abitano lì sarà di stimolo alla guarigione.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　また、これほど顕著な症状を引き起こす「信仰」ならば、本件以外にも事例が多数存在する可能性があります。",
+		   NULL, "Considerando che tutti questi sintomi sembrano essere stati scaturiti da una fede cieca in preconcetti culturali, è possibile che vi siano altri casi simili.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ひょっとすると、郷里の大病院等に文化依存症候群に関する資料があるかもしれません。",
+		   NULL, "Forse, all'interno di strutture ospedaliere più grandi, sono disponibili cartelle cliniche che menzionano sintomi derivanti da contesti culturali bizzarri.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それを取り寄せることで、効果的なメンタルケアが可能になるものと思います。",
+		   NULL, "Poter visionare tali cartelle potrebbe rendere più semplice ed efficace provvedere alle cure psichiche della paziente.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "※このＢ５の便箋は、裏面使用のメモ帳の束の中に含まれていた。",
+		   NULL, "--Questa lettera in formato B5 è allegata a un gran numero di appunti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なお、裏面白紙部分に書かれたメモは以下のとおり。",
+		   NULL, "Sul retro della lettera, invece, ci sono alcune righe scritte di fretta:", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlaySE( 0, "s_boyoon", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　中華丼１、上海風五目やきそば３、チャーハン大盛り１",
+		   NULL, "1 chuuka-don, 3 yakisoba gomoku in stile Shanghai, 1 riso grande.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+
+}

@@ -1,0 +1,299 @@
+void main()
+{
+
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, TRUE );
+
+	Wait( 100 );
+
+	DrawSceneWithMask( "background/ke5", "maskleft", 1, 0, 300 );
+
+	SetSpeedOfMessage( TRUE, 10 );
+	PlayBGM( 1, "type", 56, 0 );
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 3 ); }
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "間宮律子さま",
+		   NULL, "Gentile Ritsuko Mamiya-sama", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　　　　　　",
+		   NULL, " ", Line_ContinueAfterTyping);
+	PlayBGM( 1, "type", 56, 0 );
+
+	OutputLine(NULL, "株式会社エグゼクティハウジング",
+		   NULL, "Azienda Immobiliare Executive Housing", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+	Wait( 800 );
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お見積書の送付について",
+		   NULL, "Prospetto", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この度は、弊社をご愛顧いただきまして誠に有難うございます。",
+		   NULL, "Cogliamo l'occasione per ringraziarla delle frequenti visite alla nostra agenzia.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お問い合わせの物件について、以下にお見積もりをお送りさせていただきます。",
+		   NULL, "In allegato trova il prospetto per l'immobile da lei richiesto.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlaySE( 0, "s_page", 56, 64 );
+	Wait( 800 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　　　　　　",
+		   NULL, " ", Line_ContinueAfterTyping);
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "記",
+		   NULL, "Sommario", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "物件名　　パレスオブベルサイユ　７０７号室",
+		   NULL, "Nome dell'Immobile: Palace Versailles, Stanza 707", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "物件番号　１４Ｍ１４２１",
+		   NULL, "Codice Immobile: 14M1421", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "物件タイプ　新築マンション",
+		   NULL, "Tipologia Immobile: Unità Condominiale", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "間取り　　２ＬＤＫ",
+		   NULL, "Disposizione: 2LDK", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "所在地　　鹿骨市小岩町２丁目",
+		   NULL, "Indirizzo: Città di Shishibone, Koiwa-chou 2 Choume", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "交通　　　×××線　穀倉駅　　徒歩５分",
+		   NULL, "Linee di Trasposto: Linea XXX, Stazione di Gogura, 5 minuti a piedi", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "価格　　４９８０万円　　管理費　２００００円",
+		   NULL, "Prezzo: 49,800,000 yen \nSpese di Gestione: 20,000 yen", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その他　　東南角部屋・エレベーター停止階",
+		   NULL, "Altro: Stanza nell'angolo sud-est, ascensore al piano", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　マンション内フィットネスクラブの会員権付",
+		   NULL, "Inclusa tessera fedeltà alla palestra condominiale.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+	Wait( 800 );
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この度はお問い合わせをありがとうございます。",
+		   NULL, "Grazie ancora per il suo interessamento.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　こちらの物件は現在、急発展を遂げている穀倉駅近くの高級分譲マンションでございまして、今後、穀倉駅周辺の地価上昇に伴い、さらに価値が上がることが予想される優良物件でございます。",
+		   NULL, "La zona nei dintorni della stazione di Gogura è riservata a condomini di lusso. Grazie ai futuri piani di sviluppo, il valore degli immobili è destinato a salire, e quello da lei richiesto non fa eccezione.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　すでに募集数の数倍のお客様からのお問い合わせをいただいております。",
+		   NULL, "A monte di ciò, sono molti i possibili acquirenti interessati alla proprietà.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのため抽選制となりますことを予めご容赦ください。",
+		   NULL, "Quindi vogliamo informarla che il processo di selezione per gli acquirenti sarà svolto tramite lotteria.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+	Wait( 800 );
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　また、抽選の口数で格段の優遇を得られる「セレブリティ会員様優待枠」もございます。",
+		   NULL, "Offriamo inoltre un \"Trattamento Preferenziale della Clientela\", che le garantisce un notevole incremento delle possibilità di estrazione attraverso altre lotterie.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "どうぞお気軽に担当までお問い合わせください。",
+		   NULL, "Domandi pure ai nostri agenti per ulteriori informazioni.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　　　　　　",
+		   NULL, " ", Line_ContinueAfterTyping);
+	PlayBGM( 1, "type", 56, 0 );
+
+	OutputLine(NULL, "株式会社エグゼクティハウジング",
+		   NULL, "Agenzia Immobiliare Executive Housing", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "セレブリティ担当マネージャ　川畑",
+		   NULL, " Responsabile Percorso Preferenziale, Kawabata", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

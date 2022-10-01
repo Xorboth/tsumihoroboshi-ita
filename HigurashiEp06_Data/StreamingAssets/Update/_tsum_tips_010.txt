@@ -1,0 +1,194 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, TRUE );
+
+	DrawSceneWithMask( "background/sinryou_sinsatu4", "maskleft", 1, 0, 300 );
+
+	PlayBGM( 0, "sheep counts", 56, 0 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　「文化依存症候群」の危険性は、「解釈妄想病」を誘発しやすい点にあります。",
+		   NULL, "Il rischio dei disturbi causati da fattori culturali sta nel fatto che possono facilmente indurre sindromi da misidentificazione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまりこの度のケースでは、患者は瑣末な何かを見る度に、それを「祟り」であると解釈しようとします。",
+		   NULL, "In altri termini, e nel nostro caso, ogni volta che la paziente vede qualcosa di poco chiaro, cerca di interpretarlo come una \"maledizione\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そしてそれらが了解可能な形で累積した結果、妄想体系を作り上げ、パラノイアに至ると思われます。",
+		   NULL, "Si ritiene che questo sia il risultato dell'accumulo di eventi poco distinti che prendono una forma comprensibile alla paziente, una sorta di sistema illusorio che culmina nella paranoia.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　また、患者にはわずかですが人格性精神障害の傾向も見られます。",
+		   NULL, "In aggiunta a quanto detto, la paziente mostra anche leggeri atteggiamenti tipici del disturbo di personalità.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もちろんこれは極めて軽微なレベルであり一般的な生活に何の支障もありません。",
+		   NULL, "Naturalmente si fermano entro i livelli di controllo, che non causano alcun intralcio alla vita quotidiana della paziente.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　健常な人間であっても、日常生活において一次妄想（真性妄想）をすることは少なくありません。",
+		   NULL, "È normale persino per soggetti in salute sviluppare alcune piccole illusioni durante la vita di tutti i giorni.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ただしその内容が支離滅裂であるため、当人にも了解できず自然と無視されるのが普通です。",
+		   NULL, "Ma spesso vengono ignorate in automatico perché riconosciute come gesti insensati e inusuali.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ところが、了解不能にもかかわらず累積していくケースが存在します。",
+		   NULL, "Tuttavia, in alcuni casi, tali illusioni si accumulano una dopo l'altra nonostante risultino prive di senso o incomprensibili.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これは素質によるものが大きいとされ、患者は比較的この素質が大きいと思われます。",
+		   NULL, "Ciò dipende in larga parte dalle caratteristiche individuali della persona e, nel nostro caso, pare che la paziente mostri dei tratti molto distintivi.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　さて、一次妄想は３つのケースに分類されることは黒田先生に置かれましてもご存知のことと思います。",
+		   NULL, "Come ben sa, sintomi di questo tipo ricadono prevalentemente in tre categorie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　「妄想気分」は根拠なき危機感の切迫を感じ、",
+		   NULL, "\"Presentimento delirante\", ovvero la sensazione priva di basi che stia per succedere qualcosa di negativo.", Line_WaitForInput);
+	OutputLine(NULL, "「妄想着想」は根拠なき使命感や目的を感じ、",
+		   NULL, " \"Intuito delirante\", ovvero la sensazione priva di basi di aver indovinato o di aver raggiunto un obiettivo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「妄想知覚」は根拠なき現象に対し根拠なき理由を感じるとされています。",
+		   NULL, "\"Percezione delirante\", ovvero la sensazione priva di basi che qualcosa abbia un particolare significato.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　患者のケースでは、これら了解不能な妄想が累積し、",
+		   NULL, "Nel nostro caso, riteniamo che tutti e tre gli atteggiamenti si siano sovrapposti, trovando concretizzazione nella", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「文化依存症候群」と併発することで「解釈妄想病」を誘発し、",
+		   NULL, " peculiare cultura locale, la quale ha dato inizio alla sindrome da misidentificazione delirante.", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "了解不能な妄想を「祟り」と解釈することで了解可能としたと思われます。",
+		   NULL, "Quanto detto culmina nei vari comportamenti deliranti che vengono reinterpretati come sensati grazie alla \"maledizione\".", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　了解可能な妄想体系は了解可能な二次妄想（妄想様観念）を誘発し、自らの妄想体系を時間と共にますます強固にしていきます。",
+		   NULL, "Il sistema creato dalla paziente per dare un senso ai suoi atteggiamenti induce altri deliri che rinforzano la sua tesi, radicando la convinzione della paziente nelle sue illusioni con il passare del tempo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　（この二次妄想の中に、先の「寄生虫妄想症」も含まれると考えられます）",
+		   NULL, "(La \"parassitosi delirante\" riportata in precedenza potrebbe essere uno di questi rafforzativi.)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　パラノイアの患者に共通することは、発症後も人格の変化はなく、一見して極めて正常である点です。",
+		   NULL, "Un fattore comune a tutti i casi paranoidi è che, anche dopo lo scaturire dei primi sintomi, i pazienti sembrano gli stessi e privi di cambiamenti nelle loro personalità.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　本人にも罹患の自覚はなく、また妄想体系を本人なりの解釈により了解しているため、",
+		   NULL, "I pazienti sono all'oscuro della loro malattia e, complici le loro personali interpretazioni del loro stesso sistema delirante,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "高度な理論武装をしているケースが少なくなく、第３者がそれを妄想であると指摘することは極めて困難です。",
+		   NULL, "capita spesso che si facciano scudo di una logica ferrea che rende estremamente difficile per un esterno capire che si tratti di un delirio.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "　また、妄想の傾向にもよりますが、「被害妄想」から「追跡妄想」「陰謀妄想」に転じることもあり、結果、架空の敵を作り上げ反社会的な行為に踏み切ることもあります。",
+		   NULL, "Nondimeno, in base alla gravità dei deliri, esistono casi in cui un delirio di persecuzione o pedinamento si trasforma in delirio da complotto, dove il paziente crea un nemico immaginario e tende a isolarsi dalla comunità.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "（例えば、カルト教壇の教祖のパラノイアに集団感応した信者たちが、",
+		   NULL, "(Per esempio, casi in cui i seguaci di un culto religioso vengono influenzati dagli atteggiamenti paranoidi del fondatore, trasformando la fede nell'illusione che esista un complotto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "集団で「陰謀妄想」に転じ、自衛と称して反社会的な行為に踏み切ることは、まだ日本では報告例がありませんが、近い将来にありえるかもしれません）",
+		   NULL, "Anche se casi di questo tipo non sono ancora stati segnalati in Giappone, potrebbe  succedere comunque nel prossimo futuro.)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　幸い、現在の患者はここまで重度には至っていません。",
+		   NULL, "Fortunatamente, la paziente non ha ancora raggiunto questo stadio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　適切な治療を受けることで、容易に社会復帰を果たせるでしょう。",
+		   NULL, "Con un trattamento adeguato, dovrebbe riprendersi completamente nel corso del tempo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　父親にも、これが極めて異常なケースではなく、",
+		   NULL, "Cercate di far capire anche al padre che questo non è un caso poi così raro,", Line_WaitForInput);
+	OutputLine(NULL, "いくつかのささやかな要因の積み重なった、人間誰しも起こり得るケースであることをよく理解させてください。",
+		   NULL, " ma che è stato causato dall'accumulo di più fattori separati e che poteva scaturire in chiunque altro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　父親との絆を深めることでしか治療できず、また父親の絆があれば必ず治療できるのです。",
+		   NULL, "La paziente può essere curata soltanto approfondendo il legame con il padre. Finché questa premessa non verrà meno, sarà sicuramente in grado di riprendersi.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　以上の理由から、郷里へ帰郷されるならば、その後も専門の医療機関で継続的な指導を受けられることを強く勧めていただきたいと思います。",
+		   NULL, "Per i motivi ivi menzionati, dunque, se la paziente tornerà a vivere nel villaggio, consiglio ai medici della zona di farle seguire un percorso specifico in una struttura attrezzata.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　長文を大変申し訳ございませんでした。",
+		   NULL, "Ancora le mie scuse per questa lunga missiva.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　最後までお読みいただきましたことを感謝いたします。",
+		   NULL, "Grazie per averla letta fino alla fine.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

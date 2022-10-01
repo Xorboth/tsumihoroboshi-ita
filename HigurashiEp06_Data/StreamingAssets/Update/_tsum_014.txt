@@ -1,0 +1,1117 @@
+void main()
+{
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene( "background/nort", 300 );
+
+	PlayBGM( 0, "getting_mad", 56, 0 );
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "●「帰巣性」と「ホームシック」について",
+		   NULL, "\"Su 'L'istinto di ritorno' e la 'Nostalgia'\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　広義の意味で「帰巣性」を取り扱うなら、およそほとんどの生き物に帰巣性があると言えるだろう。",
+		   NULL, "Volendo parlare di \"istinto di ritorno\" nel senso più ampio del termine, possiamo dire che quasi tutti gli animali lo posseggono.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　人間についても同じで、我々は睡眠や休息、食事といった行為を、よく馴染んだ場所、つまり家で行ないたがる。",
+		   NULL, "Questo comprende anche gli esseri umani. Preferiamo dormire, riposare e mangiare in luoghi che ci mettono a nostro agio, come casa nostra.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この家は、まさに巣に通じるだろう。",
+		   NULL, "La casa per noi è come il nido per gli uccelli.", Line_WaitForInput);
+	OutputLine(NULL, "ゆえに人にも帰巣性があると言える。",
+		   NULL, " Possiamo dire di essere dotati anche noi dell'istinto di ritorno.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そもそも動物はなぜ巣を必要とするのか。",
+		   NULL, "Iniziamo con una domanda: perché gli animali necessitano di una tana o di un nido?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これも人間とまったく同じだ。",
+		   NULL, "La risposta è la stessa che vale per gli umani.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　睡眠や休息、食事という行為は、生存のために不可欠な行為であり、同時に隙を見せる無用心な行為でもある。",
+		   NULL, "Dormire, riposare e mangiare sono tutte azioni essenziali alla sopravvivenza. Tuttavia, al tempo stesso, ci lasciano anche privi di difese.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その為、隙を見せても大丈夫な「安全地帯」を設ける必要があったからである。",
+		   NULL, "Ecco perché ci è necessaria una \"zona sicura\" dove non dover stare sempre all'erta.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この「安全地帯」を得ないことは、高度なストレスを与えることは誰でも知っている。",
+		   NULL, "Sappiamo tutti che vivere privati della \"zona sicura\" è motivo di picchi di stress.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　動物を慣れない環境に強引に移せば、相当のストレスを与えることになるし、",
+		   NULL, "Quando un animale viene portato in un nuovo ambiente, è normale che si senta stressato.", Line_WaitForInput);
+	OutputLine(NULL, "人間とて、不慣れな土地で気を許せない生活を強いれば、相当のストレスを与えることになる。",
+		   NULL, " Come lo diventa anche una persona che è costretta a trasferirsi in un luogo a lei non familiare.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのストレスを「ホームシック」と呼ぶことは誰もが知っているだろう。",
+		   NULL, "Il termine esatto che spiega questo fenomeno è \"nostalgia di casa\".", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　日本では「ホームシック」については研究が非常に浅い。",
+		   NULL, "In Giappone non è mai stato approfondito il concetto di \"nostalgia di casa\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その定義を長く、心の弛みのせいとし、その救済を放置してきた歴史があるからである。",
+		   NULL, "Noi giapponesi la riconduciamo a una debolezza mentale, lasciandola da parte e ignorandola per lungo tempo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「ホームシック」の歴史は非常に長く、中世ヨーロッパでは、精神的なものではなく、肉体的な病気とまで信じていた。",
+		   NULL, "Eppure la nostalgia di casa ha una lunga storia dietro di sé. Nel Medioevo si credeva che non si trattasse di una condizione mentale, bensì di una malattia prettamente fisica.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "中でもとりわけ、スイス人が罹患しやすいと信じられていた。",
+		   NULL, "Tra chi condivideva questo pensiero, pare che fossero gli svizzeri i più soggetti ad ammalarsene.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これは、当時のヨーロッパにおいて、スイス人が出稼ぎ民族として知られていたためだろう。",
+		   NULL, "Gli svizzeri, al tempo, erano conosciuti per essere un gruppo etnico che lavorava lontano da casa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　郷里を遠く離れ、しかも現代のように電話で声を聞くこともできない。",
+		   NULL, "Abitavano in luoghi distanti, privi di cellulari e incapaci quindi di sentire le voci delle loro famiglie per mesi, o addirittura anni.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな異郷で働くスイスの若者たちが「ホームシック」にかかったことは想像に難しくない。",
+		   NULL, "Facile immaginare come i giovani lavoratori svizzeri soffrissero di nostalgia di casa mentre lavoravano all'estero.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この「ホームシック」にかかったスイス人たちは、郷里へどうしても帰りたくなり、",
+		   NULL, "Costoro desideravano tornare a casa,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも仕事の都合で帰ることができない葛藤が生じた時、身体的にも精神的にも衰弱し、時には精神に異常すら来たし、脱走や自殺といった逃避行為に駆り立てたという。",
+		   NULL, "ma non potevano a causa del loro lavoro. Questo conflitto interno li rendeva deboli fisicamente e mentalmente. Alcuni impazzivano tentando di fuggire dalla dura realtà, a volte ricorrendo al suicidio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　当時のスイス人たちもこの迷信を信じ、「ホームシック」にかからないための民間療法や魔術紛いのものが多数流行したという。",
+		   NULL, "In Svizzera la superstizione dilagava, dando vita a fantomatici rimedi ai limiti dell'occulto per prevenire la diffusione della nostalgia di casa.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　郷里に帰る以外、治療の方法がないのだから、不治の病とも言えたに違いない。",
+		   NULL, "Visto che l'unica cura era tornare a casa, potremmo dire che si trattasse di una malattia mortale.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ただし、病と呼ぶのは正しくない。",
+		   NULL, "Naturalmente, non è così.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　正確には「ホームシック」とは、郷里という「安全地帯」へ戻りたいと脳が欲求する、帰巣のための信号であると言えるからだ。",
+		   NULL, "Nel dettaglio, la \"nostalgia di casa\" è indice dell'istinto di ritorno del genere umano. Il cervello desidera tornare nella \"zona sicura\", cioè nella propria casa.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　始め、脳は郷里への思い出などを掻きたて、自然な帰郷を促す。",
+		   NULL, "In un primo momento, il cervello vuole farci ricordare i momenti felici della vita in famiglia, spingendoci a tornare a casa in modo naturale.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、理性がそれを咎め帰郷を果たせないと、脳は身体に異常な信号を送るようになる。",
+		   NULL, "Ma quando la ragione impedisce questo funzionamento, il cervello inizia a mandare dei segnali innaturali al nostro corpo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その結果、衰弱が起こり、より異郷での生活を困難としていき、最後には理性を曲げることで、帰郷を果たすのである。",
+		   NULL, "Il risultato è che i muscoli si indeboliscono, rendendo difficile continuare a vivere nella nuova terra straniera. Allo stadio terminale, è necessario piegare la ragione all'istinto per soddisfare il desiderio del ritorno.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり、「帰巣性」ゆえに「ホームシック」が生み出されるのである。",
+		   NULL, "In breve, la nostalgia di casa nasce dall'istinto di ritorno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　同時に、この「帰巣性」が強ければ、より強力な「ホームシック」が生み出されるわけでもある。",
+		   NULL, "E più l'istinto di ritorno è forte, più è intensa la nostalgia di casa.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この「帰巣性」の強さには、もちろん個人差があるし、環境にも大きく左右される。",
+		   NULL, "La forza traente dell'istinto di ritorno varia da individuo a individuo, dipendendo di pari passo dall'ambiente in cui quest'ultimo vive.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　故郷がより安全であり、現在の環境がより危険であるなら「帰巣性」は強く宿るだろう。",
+		   NULL, "Se la casa è un luogo sicuro ma l'ambiente di vita è pericoloso, l'istinto di ritorno si accentua.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　逆に、故郷よりも現在の環境が安全であるなら「帰巣性」は極めて弱くなるだろうと思われる。",
+		   NULL, "Al contrario, quando l'ambiente di vita è più tranquillo di quello casalingo, l'istinto di affievolisce.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　また、単に安全かどうかだけでなく、文化的なものも作用するだろう。",
+		   NULL, "La sicurezza non è certo l'unico metro di paragone. Anche gli aspetti culturali influiscono sulla sua potenza.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　節目ごとに里帰りを求める風習の数々は地方差があり、出身地の文化によってもまた「帰巣性」の強弱は変わると思われる。",
+		   NULL, "Gli eventi tradizionali che richiedono ai membri della famiglia di riunirsi, quali le festività dell'anno, variano da regione a regione, rendendo determinante anche il paese di nascita.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな中にあって、極めて過剰に「帰巣性」が強いと考えられるのが『鬼ヶ淵村』の仙人たちである。",
+		   NULL, "Tra queste tradizioni, quella dei \"trascendenti\" del villaggio di Onigafuchi pare che fosse ritenuta estremamente opprimente sull'istinto del ritorno.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鬼ヶ淵村の仙人たちは、戒律により村から出ることを禁じていた。",
+		   NULL, "Gli abitanti di Onigafuchi impedivano ai loro compaesani persino di lasciare il villaggio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これにはすでに述べた選民思想や、穢れ意識などが作用しているものと思われるが、",
+		   NULL, "In molti credono che fossero gli effetti del senso di superiorità e di purezza che ho menzionato poc'anzi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "禁を破って村を捨てれば、必ずオヤシロさまが追ってきて祟りを成すという、現在でも強く信じられている迷信は、先に述べた「ホームシック」と捉えることもできる。",
+		   NULL, "Ancora oggi gli abitanti credono che Oyashiro-sama maledica chi infrange la regola di non lasciare il villaggio. Tale superstizione è ricollegabile al concetto di nostalgia di casa.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　「帰巣性」と「ホームシック」の関係が比例的であるならば、",
+		   NULL, "Se la nostalgia è direttamente proporzionale all'istinto di ritorno,", Line_WaitForInput);
+	OutputLine(NULL, "祟りという大袈裟な表現はまさに「ホームシック」の強さを示すものであり、同時に「帰巣性」の強さを示すものでもある。",
+		   NULL, " allora parlare di \"maledizione\" è un enorme indice di quanto i due valori siano elevati.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その「帰巣性」の強さゆえに、下界を強く忌み嫌い、閉鎖社会を形作ったのではないだろうか。",
+		   NULL, "Presumo che questa gente detestasse il mondo esterno e che avesse creato una società autonoma proprio per via del loro forte istinto di ritorno.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　太古の鬼ヶ淵村においては、残念ながら「帰巣性」の強さを測るケースがない。",
+		   NULL, "Sfortunatamente, non esiste un modo per misurare la potenza dell'istinto di ritorno nella popolazione primitiva di Onigafuchi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　戒律で村を出ることが厳しく禁じられていたため、「ホームシック」にかかるまで村を出ていたケースが存在しないからだ。",
+		   NULL, "Lasciare il villaggio era proibito a tal punto che nessuno se n'era mai andato abbastanza a lungo da sviluppare la nostalgia di casa.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ところが、明治以降の近年になって事情が一変した。",
+		   NULL, "Le cose, tuttavia, cambiarono con l'inizio del Periodo Meiji.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　近代化の波が押し寄せ、鬼ヶ淵村の神聖性が失われた。",
+		   NULL, "La sacralità di Onigafuchi iniziò a crollare sotto i colpi della modernizzazione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　都会に憧れる若者が増え、また職を得るために村を出る決断も迫られた。",
+		   NULL, "Molti giovani iniziarono a desiderare di vivere in città, mentre altri furono costretti a lasciare il villaggio per trovare un lavoro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その結果、村人たちの流出が始まったのである。",
+		   NULL, "Di conseguenza, gli abitanti cominciarono ad avventurarsi oltre i confini del villaggio.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ここで、鬼ヶ淵村の仙人の末裔たちは、初めて己が「帰巣性」の強さについて知るのである。",
+		   NULL, "Fu allora che i trascendenti di Onigafuchi capirono, per la prima volta, quanto fosse forte il loro istinto di ritorno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雛見沢住民は異常に「ホームシック」が強かったのである。",
+		   NULL, "Gli abitanti di Hinamizawa soffrirono enormemente la nostalgia di casa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　やがてその「ホームシック」を誰ともなく「オヤシロさまの祟り」と呼ぶようになった。",
+		   NULL, "Con il passare del tempo, ci si riferì alla nostalgia definendola \"la maledizione di Oyashiro-sama\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　しかも出稼ぎに出た誰かが、異郷の地で祟りに遭い、狂い死んだとの噂が流れると、流出住民たちは次々と村か、周辺の町へ舞い戻ってくることとなる。",
+		   NULL, "Si iniziò a dire che chi aveva lasciato il villaggio per trovare lavoro in un luogo lontano fosse stato maledetto, finendo per impazzire e morire. A seguito di ciò, in molti tornarono a casa o nelle zone limitrofe.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この「ホームシック」、「帰巣性」の強さは、おそらくは文化によるもの、",
+		   NULL, "La loro nostalgia di casa e il loro istinto di ritorno erano molto forti a causa della loro cultura.", Line_WaitForInput);
+	OutputLine(NULL, "すなわち雛見沢独自の信仰であるオヤシロさま信仰により培われたと考えるのが妥当だろう。",
+		   NULL, " È ragionevole pensare che i due aspetti siano stati accresciuti dall'unicità della regione di Hinamizawa, ovvero dal culto di Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼らは生まれた時から無意識の内にオヤシロさまの戒律を刷り込まれ、村を出ることに対し、無意識の内に罪を感じていたに違いない。",
+		   NULL, "Dal momento della nascita, agli abitanti venivano insegnate le regole di Oyashiro-sama. Suppongo che si sentissero inconsciamente in colpa ogni volta che si allontanavano dal villaggio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その結果、「ホームシック」を「オヤシロさまの祟り」と捉えたのだろう。",
+		   NULL, "Fu così che la nostalgia di casa si trasformò nella maledizione di Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　オヤシロさまの戒律があるから「帰巣性」が強まったのか、「ホームシック」が強すぎるからオヤシロさまの戒律を作ったのか。",
+		   NULL, "Non saprei dire se la nostalgia di casa aumentasse a causa delle regole di Oyashiro-sama o se fossero le regole a farsi più rigide con l'aumentare della nostalgia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……卵が先か鶏が先かははっきりしない。",
+		   NULL, "... chissà quale delle due è venuta prima.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	FadeOutBGM( 0, 300, FALSE );
+
+	SetColorOfMessage( TRUE, 0xff, 0xaa, 0xaa );
+
+	DrawSceneWithMask( "background/si_h2_01", "maskup", 1, 0, 300 );
+	PlayBGM( 0, "yoru", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……私は小さい文字に読み疲れ、ごろりと転がり天井を仰いだ。",
+		   NULL, "... leggere questi caratteri minuscoli mi ha affaticato gli occhi, così mi sdraio sul pavimento.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　「オヤシロさまの祟り」の正体はホームシックだって？",
+		   NULL, "La vera identità della maledizione di Oyashiro-sama... è la nostalgia di casa?", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私の話を理解してくれた三四さんのスクラップ帖だと思い、期待して読んだのに。",
+		   NULL, "Miyo-san ha creduto alla mia storia e mi ha lasciato questi appunti. Mi aspettavo di trovare qualcosa di interessante.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……その内容が、私がカウンセラーの先生方に何度も言われた言葉、「ホームシック」でまとめられてしまったので、ちょっと不快だった。",
+		   NULL, "... ma ridurre tutto alla semplice \"nostalgia di casa\", come a volte mi avevano detto anche i dottori, mi innervosisce.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ホームシックなんて言葉で、……あの異常な体験をどう説明できるというのか。",
+		   NULL, "\"Nostalgia di casa\" non basta a spiegare il fenomeno incredibile a cui ho assistito.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は確かにあの光り輝く眩しい浴室でオヤシロさまが降臨されるのを見た。",
+		   NULL, "Ho visto Oyashiro-sama scendere su di me in una coltre di luce abbagliante.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして血管の中からぶくぶくと溢れ出す、あの汚らしい赤黒いうじ虫の群れを見た。",
+		   NULL, "Ho visto quelle larve rossastre dall'aria disgustosa strisciarmi fuori dalle vene.", Line_WaitForInput);
+	OutputLine(NULL, "それらに対しては何の説明にもなっていない。",
+		   NULL, " Questo quaderno non spiega niente di tutto questo.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/file", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あのうじ虫の群れを三四さんはどう説明するというのか。",
+		   NULL, "Non capisco come Miyo-san voglia spiegare quel nugolo di insetti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それとも元々説明などないのか？",
+		   NULL, "Forse non lo farà.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　やっぱりあれは錯乱した私の妄想だったのか……？",
+		   NULL, "Ho avuto davvero un'allucinazione...?", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は「うじ虫」の説明を求めて、三四さんに借りている数冊のスクラップ帖を、",
+		   NULL, "Scorro distrattamente le pagine di uno degli altri quaderni di Miyo-san,", Line_WaitForInput);
+
+	PlaySE( 0, "s_page", 56, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_page", 56, 64 );
+
+	OutputLine(NULL, "ベラベラっと流し見する。",
+		   NULL, " alla ricerca di una spiegazione per quelle larve.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 300, FALSE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………すると、…なんと見付かった。",
+		   NULL, "... e la trovo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それも、私の期待するそのままの見出しでだ。",
+		   NULL, "La dicitura è proprio quella.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+	PlaySE( 0, "s_page", 56, 64 );
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+
+	PlayBGM( 0, "depressive paranoia", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "●「うじ虫」と「オヤシロさまの祟り」について",
+		   NULL, "\"Sulle 'Larve'\n           e la 'Maledizione di Oyashiro-sama'\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　明治の頃の、流出住民集団帰郷の際、帰郷者たちの中である奇病の噂が流れた。",
+		   NULL, "Durante il periodo Meiji, un gruppo di abitanti di ritorno a Hinamizawa stava parlando di una strana malattia che aveva sentito in giro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雛見沢を離れると、傷口が腐り「うじ虫」が湧き出して体中を内側から食い尽くすというのである。",
+		   NULL, "Dicevano che delle \"larve\" avevano iniziato a uscire dalla ferita di un uomo che aveva lasciato Hinamizawa, finendo per divorare gli organi di quest'ultimo dall'interno.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その奇病について、当時の古手神社神主はそれこそ「オヤシロさまの祟り」の印であると説いたという。",
+		   NULL, "Il sacerdote shintoista del Santuario Furude del tempo spiegò questo evento inusuale come indice della \"maledizione di Oyashiro-sama\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　当時の口伝によると、神主は不出である絵巻物を広げ、その「うじ湧き」が太古の昔から語り継がれていたことを示したらしい。",
+		   NULL, "In base alle fonti, il sacerdote mostrò agli uomini un'antica scrittura, dicendo loro che la comparsa delle larve era stata tramandata di generazione in generazione.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何でも、鬼たちがやって来たという「鬼の国」は、「死者の国」とも読み取れるらしく、",
+		   NULL, "Lo scritto diceva che il mondo dei demoni rappresentava l'aldilà,", Line_WaitForInput);
+	OutputLine(NULL, "死者の国の鬼たちは、常にその身をうじ虫に食われ続けているというのである。",
+		   NULL, " dove le larve divoravano costantemente i demoni in un modo simile alla miasi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その鬼たちの血を宿す彼らは、オヤシロさまの加護がある雛見沢では何の問題もないが、",
+		   NULL, "Gli abitanti del villaggio, nelle cui vene scorreva il sangue demoniaco, non avevano niente da temere finché fossero rimasti a Hinamizawa, sotto la protezione di Oyashiro-sama.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "異郷の地で加護を失うと、鬼の血の中で眠っていた「うじ虫」たちも目覚め、全身に溢れかえって、その身を食い尽くしてしまうと言うのだ。",
+		   NULL, "Ma una volta lasciata Hinamizawa e la protezione del loro dio, le larve rimaste sopite nel loro sangue di demone si sarebbero risvegliate e avrebbero iniziato a consumarli dall'interno.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　しばらくの間、この「うじ湧き病」はひどく恐れられ、仕事の都合で郷里を離れなければならない時には、この「祟り」から赦しを得る免罪符を神社に求めたという。",
+		   NULL, "La \"malattia delle larve\" spaventò gli abitanti per diverso tempo, al punto da chiedere al santuario di dar loro dei talismani per proteggerli ogni volta che lasciavano il villaggio per lavoro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（この辺が、中世スイスのホームシック予防と合致するのは面白い）",
+		   NULL, "(A questo proposito, anche gli svizzeri scongiuravano la nostalgia di casa in questo modo durante il Medioevo.)", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大戦を境に、この「うじ湧き病」の妄想は潰えたが、郷里から離れて住まう親族に免罪符を送る習慣は根強く残っている。",
+		   NULL, "Con l'inizio della guerra, la storia della \"malattia delle larve\" perse di interesse, ma rimase comunque consuetudine inviare talismani a chi abitava lontano da Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　また、免罪符の中に「蛆（うじ）」の字が含まれているのもその名残だろう。",
+		   NULL, "Questi talismani avevano ricamata la parola \"larva\" su di essi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、ここで興味深いのは、奇病の噂が流れる以前には、雛見沢住民とて「うじ湧き」について知らなかったという点である。",
+		   NULL, "La cosa più interessante, però, è che gli abitanti di Hinamizawa non sapevano nulla della \"malattia delle larve\" finché non iniziarono a girare delle voci in merito.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これまで私は、無意識レベルで刷り込まれた信仰が、「ホームシック」を「祟り」だと認識させると考えていた。",
+		   NULL, "Credevo che il loro culto quasi inconscio avesse portato la gente a ritenere una \"maledizione\" la nostalgia di casa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　よってこの事前知識なき「うじ湧き」の一件は、これまでの私の研究と真っ向から対立するものとなる。",
+		   NULL, "Ecco perché questo nuovo concetto di \"malattia delle larve\" contraddice le ricerche che ho svolto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　祟りを鵜呑みにした集団帰郷者たちにある種の集団妄想が取り憑き、それを神主が巧みに信仰心へ誘導したと読み取るのが、確かに自然ではあるのだが…。",
+		   NULL, "Un'ipotesi plausibile è che questa gente che tornava a casa fosse stata colta da parassitosi delirante a causa del credo nella maledizione, e che il sacertode fece leva su ciò per indottrinarli ulteriormente.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　偶然の集団妄想が、たまたま太古の絵巻物と一致しただけとするには、どうにも腑に落ちない。",
+		   NULL, "Ma non sono del tutto convinta che sia coinciso con la lettura dell'antica scrittura per puro caso.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　「オヤシロさまの祟り」を受けると、何の予備知識がなくても「傷口にうじ虫が湧く」のだろうか？",
+		   NULL, "Chissà se è possibile ammirare le larve in una persona che non sa niente della maledizione di Oyashiro-sama, ma che ne è stata comunque colpita.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　誰か「祟り」を私の目の前で受けてはくれないだろうか。",
+		   NULL, "Spero che Oyashiro-sama lanci la sua maledizione su qualcuno che posso studiare.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ぜひ観察し、傷口にうじ虫が湧いたかどうか聞いてみたいものだ。",
+		   NULL, "Quanto vorrei vedere queste larve fuoriuscire da una ferita davanti ai miei occhi.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetColorOfMessage( TRUE, 0xff, 0xaa, 0xaa );
+	PlaySE( 0, "wa_003", 56, 64 );
+	DrawScene( "background/file", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…………それは、まるで三四さんが私に直接問い掛けているかのようだった。",
+		   NULL, "... sento come se Miyo-san fosse qui con me a farmi questa richiesta.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そうだ。",
+		   NULL, "Ma certo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼女がこのスクラップ帖を渡す時、……あるいはあなたになら何かわかるかもしれない…というようなことを言っていたような気がする。",
+		   NULL, "Quando mi ha dato gli appunti... ha detto che forse solo io sarei stata in grado di capire.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は一瞬だけ喜んだ。",
+		   NULL, "Per un attimo, mi sento felice,", Line_WaitForInput);
+	OutputLine(NULL, "あの「うじ虫」が、私ひとりの妄想ではなかったからだ。",
+		   NULL, " perché ho scoperto che le larve non sono state una mia allucinazione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが同時に、…あれが私の「妄想」であったとする逃げ道も失ってしまう。",
+		   NULL, "Al tempo stesso... ora non ho più una scusa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……つまり、あの「うじ虫」は、私の見間違いでも何でもなく、…本当にいたのだ。",
+		   NULL, "...... le larve c'erano sul serio... io le ho viste.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それに気付いた途端に、手首や肘、膝の内側、首筋などが急に痒くなったような気がした。",
+		   NULL, "D'un tratto, sento il polso, i gomiti, le gambe e il collo che mi prudono.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……再びカミソリで血管を開いてみたい衝動に駆られるが、それを私は静かに押し殺した。",
+		   NULL, "...... ho come l'istinto di prendere un coltello e tagliarmi una vena, ma mantengo la calma.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私がうじ虫が湧いたという話をした時、三四さんがものすごく真剣な表情を浮かべていたことを思い出す。",
+		   NULL, "Ricordo che Miyo-san aveva uno sguardo serio sul volto quando le ho raccontato la mia storia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………さぞや、ぞっとしたに違いない。",
+		   NULL, "... avrà pensato che fosse disgustoso.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、ぞっとしたのは私も同じだ。",
+		   NULL, "Ma vale lo stesso per me.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……誰も信じてくれないと嘆きながらも、……自分の血管の中にあんな気持ち悪いものがびっしり蠢いているなんて信じたくなかった。",
+		   NULL, "... quando piangevo perché nessuno mi credeva... parte di me non voleva credere che il mio corpo fosse diventato il nido di quelle creature disgustose.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから心のどこかで、やっぱりこれは妄想なのだろうと思い込みたがっている部分もあったと思う。",
+		   NULL, "Credo che parte di me volesse credere che si trattasse di un mio abbaglio.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、それが否定されてしまった。",
+		   NULL, "Ma ora so che non è così.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これは幻でも何でもなく、……私と同じ体験をした人たちが過去に実在していたのだ。",
+		   NULL, "È tutto vero... e ci sono persone che hanno vissuto la mia stessa esperienza.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……鬼の血の中のうじ虫が、オヤシロさまの加護を失うと溢れ出す…？",
+		   NULL, "... le larve nel sangue demoniaco si svegliano quando perdiamo la protezione di Oyashiro-sama...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　では、逆を返せば、…オヤシロさまの加護があれば溢れ出さないだけで、",
+		   NULL, "In parole povere... le larve rimangono in letargo sotto l'influsso di Oyashiro-sama,", Line_WaitForInput);
+	OutputLine(NULL, "村人全員がこのうじ虫を知らずに血管の中に飼っているということにはならないだろうか…？",
+		   NULL, " ma si trovano comunque dentro tutti gli abitanti, a loro insaputa...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ということは……鬼の血を宿すとはつまり、……あの気持ちの悪いうじ虫たちを宿している…という意味なのか…？",
+		   NULL, "Coloro nelle cui vene scorre il sangue dei demoni... convivono ogni giorno con quelle larve stomachevoli...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は結論を急がず、再びスクラップ帖をバラバラと捲った。",
+		   NULL, "Scorro di nuovo le pagine, cercando di non saltare a conclusioni affrettate.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…自然と、うじ虫に関連した何かを探してしまう。",
+		   NULL, "... trovo casualmente un altro punto legato alle larve.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+	PlaySE( 0, "s_page", 56, 64 );
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "●「寄生虫」による宿主支配について",
+		   NULL, "\"Sui 'Parassiti' e sul 'Controllo dell'Ospite'\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　集団帰郷者の「うじ湧き病」で考えたのだが、そもそも雛見沢の過度の「ホームシック」が、何らかの寄生虫による感染症とは考えられないだろうか。",
+		   NULL, "La \"malattia delle larve\" mi ha fatto pensare a una cosa: è possibile che il senso di nostalgia estremo di chi abita a Hinamizawa sia sintomo dell'invasione di un qualche parassita?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これは、彼らが傷口から湧き出す「うじ虫」を見たからということではなく、",
+		   NULL, "Non voglio collegare le larve di cui ho parlato a dei parassiti.", Line_WaitForInput);
+	OutputLine(NULL, "そもそも彼らが文化（信仰）だと思っているものが、そもそも感染症と関連するのではないかと考察するものである。",
+		   NULL, " Sto solo cercando di pensare alla possibilità in cui la cultura (cioè la religione) del villaggio possa essere associata a una malattia infettiva.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　感染症の多くは、寄生虫たちが望まず引き起こしているものである。",
+		   NULL, "Sono molte le malattie di questo tipo causate da parassiti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　寄生虫にとって宿主は文字通りに宿である。",
+		   NULL, "L'ospite di un parassita è praticamente la sua casa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　よって、彼らにとって究極の寄生とは、宿主に気付かれない完全な共生であろう。",
+		   NULL, "Infatti, esso vuole vivere all'interno dell'organismo ospite il più a lungo possibile. E il modo migliore per farlo è coesistere senza che quest'ultimo se ne accorga.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、寄生虫たちは時に、宿主を支配して自らの繁栄に利用しようとすることがある。",
+		   NULL, "In alcuni casi, i parassiti cercano addirittura di controllare l'ospite e di usarlo per il loro mantenimento.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　例えば、中間宿主を経由して感染する寄生虫に見られる能力に、",
+		   NULL, "Per esempio, alcuni parassiti riescono a prendere il controllo dell'ospite", Line_WaitForInput);
+	OutputLine(NULL, "宿主の行動を支配して、より上位の宿主にわざと捕食させ、伝染しようとする試みが知られている。",
+		   NULL, " per spingerlo a essere mangiato da un'organismo più sviluppato.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　代表的な例では、蝸牛、蟻を中間宿主とし、上位宿主である羊に捕食されるよう牧草の葉先に中間宿主を誘導するDicrocoelium　dendriticum が挙げられる。",
+		   NULL, "Uno di questi è il Dicrocoelium dendriticum. Inizia il suo ciclo vitale dentro lumache o formiche, spingendole a spostarsi sui punti più alti della vegetazione per essere più facilmente individuabili dai predatori.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　より高度な動物を支配する例では、鼠を中間宿主とし、上位宿主を猫とするToxoplasma　gondiiも挙げられる。",
+		   NULL, "Un parassita che controlla organismi più complessi è anche il Toxoplasma gondii, che usa i topi come intermediari per arrivare fino ai gatti, loro ospiti definitivi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この場合、中間宿主である鼠から、猫に対する忌避性を喪失させることによって、捕食・伝染させる確率を向上させていることが知られている。",
+		   NULL, "Questo parassita fa perdere ai topi la paura dei felini cosicché non scappino e vengano mangiati, portando Toxoplasma gondii nel suo ospite definitivo.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　また、不特定の宿主への無差別感染を目的としたケースもある。",
+		   NULL, "Ci sono anche parassiti che scelgono i loro ospiti a caso.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　特に有名な例ではRabiesvirus が挙げられる。",
+		   NULL, "Il virus della rabbia, per esempio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これは感染者の脳に寄生して繁殖し、その後、唾液腺を経由して唾液に混じる。",
+		   NULL, "Vive e si riproduce nel cervello dell'ospite, spostandosi poi nella saliva attraverso le ghiandole salivari.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　同時に、感染者の攻撃性を著しく向上させ、無差別に噛み付き、傷口に唾液と混じって侵入することで伝染する。",
+		   NULL, "Rende l'ospite estremamente aggressivo, in modo da farlo mordere chiunque gli capiti a tiro per trasferirsi nel nuovo ospite.", Line_WaitForInput);
+	OutputLine(NULL, "……ちなみにこれは狂犬病のこと。",
+		   NULL, " ... infatti, è così che funziona la rabbia.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このように、寄生虫には自らの繁栄のために、宿主を支配する能力を宿すものが少なくないのである。",
+		   NULL, "Dunque alcuni parassiti sono in grado di controllare gli ospiti a loro beneficio.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　さて、これまで挙げたもののほとんどは、寄生虫たちがより繁栄し伝染していくためのケースだが、",
+		   NULL, "Gli esempi da me elencati sono tutti parassiti che si spostano in ospiti sviluppati per potersi riprodurre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もっと単純に、彼らがより過ごしやすい環境を欲して宿主の行動を支配するケースもあるのではないか。",
+		   NULL, "Ma credo che esistano anche parassiti che semplicemente controllano gli ospiti per potersi garantire un ambiente di vita confortevole.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ここで私は、かつて提唱した、鬼ヶ淵村住民の異常な「帰巣性」と「ホームシック」をリンクさせられないかと考える。",
+		   NULL, "Voglio trovare un collegamento con l'istinto di ritorno e con la nostalgia di casa degli abitanti di Onigafuchi.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり、雛見沢にはある種の寄生虫が蔓延していて、村人全てに寄生していると仮定する。",
+		   NULL, "Facciamo finta che esista un parassita autoctono di Hinamizawa che vive all'interno degli abitanti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その寄生虫たちは、この雛見沢がもっとも居心地のよい環境であり、",
+		   NULL, "Per suddetto parassita, Hinamizawa è il luogo ideale dove vivere,", Line_WaitForInput);
+	OutputLine(NULL, "宿主に対してこの地に留まり続けるように、強い「帰巣性」を与え、",
+		   NULL, " perciò induce negli ospiti un forte istinto di ritorno, in modo da farli rimanere a Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "無視して土地を離れようとすると、「ホームシック」を引き起こして抵抗するのではないだろうか。",
+		   NULL, "Inoltre, causa nell'ospite dei sintomi sgradevoli ogni volta che questo prova a lasciare il paese natio.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　寄生虫は名が示す通り、宿主に寄生しなければ生きていけない。",
+		   NULL, "Ai parassiti serve un ospite in cui vivere.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな彼らにとって、自分たちの過ごしやすい環境に、宿主である人間がコミュニティを形成して住み続けることは都合がいいはずだ。",
+		   NULL, "È meglio anche per loro se l'ospite si crea una comunità e un ambiente dove si sente a suo agio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この、宿主を自分たちの過ごしやすい土地に縛りつけようとする寄生虫の存在を仮定すると、意外にもこれまでのナゾに説明がつけやすい。",
+		   NULL, "Questa teoria mi rende più facile spiegare molti dei misteri di cui ho parlato in altre sezioni.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり、太古の鬼ヶ淵村の仙人たちは、この寄生虫の存在を知っていたことになる。",
+		   NULL, "I trascendenti di Onigafuchi sapevano dell'esistenza del parassita.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、宿主である自分たちが村を離れて生きていけないことを知っていて、俗世を嫌う戒律や文化を作った。",
+		   NULL, "Perciò, in quanto suoi organismi ospiti, non potevano lasciare il villaggio, arrivando a creare una cultura che limitava in maniera stretta ogni contatto con il resto del mondo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは近年のダム戦争の異常な盛り上がりも説明できる。",
+		   NULL, "Spiega anche il perché la gente fosse così esasperata durante le proteste contro la diga.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　では……、オヤシロさまの伝説で語られる、沼から湧き出した鬼とはつまり、寄生虫の大量発生のことなのではないだろうか。",
+		   NULL, "Quindi... i demoni venuti dalla palude nella leggenda di Oyashiro-sama possono essere visti come la diffusione di massa del parassita.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鬼たちが村人を襲ったという記述は、おそらく末期の感染者の錯乱した行為を示すに違いない。",
+		   NULL, "E la storia dell'assalto al villaggio da parte dei demoni dev'essere una metafora del comportamento degli abitanti infetti, che erano stati assoggettati dal parassita.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE( 0, "s_page", 56, 64 );
+	DrawSceneWithMask( "white", "maskright", 7, 0, 300 );
+	DrawScene( "background/si_h2_01", 400 );
+
+	SetColorOfMessage( TRUE, 0xff, 0x99, 0x99 );
+	PlayBGM( 1, "yoru", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………さすがに、あまりに突拍子もない話だったので、笑い捨てようと思った。",
+		   NULL, "... questa teoria è fin troppo sopra le righe. Dovrei farmi una risata e passare oltre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、三四さんに悪いと思ったので、笑うのはやめた。",
+		   NULL, "Ma mi sentirei in colpa nei confronti di Miyo-san.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この雛見沢が、…実は寄生虫に支配されているって…？",
+		   NULL, "Hinamizawa sotto il controllo di un parassita...?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　確かにあの傷口から溢れ出したうじ虫のことだけを取り上げるなら、そうとこじ付けられないこともない。",
+		   NULL, "Spiegherebbe il modo in cui le larve sono uscite dalle mie ferite.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……馬鹿馬鹿しいと思う気持ちと、…祟りなんてあやふやなものよりもずっと説得力があると思う気持ちが交錯して、頭がぐるぐると回った。",
+		   NULL, "... mi sento confusa, frastornata e ridicolizzata allo stesso tempo... ma una parte di me ritiene questa teoria la più convincente di tutte.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/file", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが多分、……このスクラップ帖を書いたため、三四さんは消されたに違いないのだ。",
+		   NULL, "In fondo... forse Miyo-san è stata eliminata proprio perché aveva questi appunti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ということは……、",
+		   NULL, "In questo caso...", Line_WaitForInput);
+	OutputLine(NULL, "消した連中にとって、このスクラップ帖は無視できない内容なのだ。",
+		   NULL, " significa che il contenuto dei quaderni è un qualcosa che non posso ignorare.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…もし相手がそうなら、三四さんを消した後、スクラップ帖を全て集め闇に葬ろうとするはずだ。",
+		   NULL, "... rischio che qualcuno voglia appropriarsene per poi farli sparire nell'oblio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………もしそこで、数冊が紛失していることに気付いたなら。",
+		   NULL, "... e se si accorgessero che i quaderni di Miyo-san non si trovano da nessuna parte?", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 300, FALSE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……………背筋がぞっとしてくるのを感じた。",
+		   NULL, "... sento un brivido lungo la pelle.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私はこのスクラップ帖を持っていることを秘密にしないといけない。",
+		   NULL, "Non devo dire a nessuno che sono in possesso dei suoi appunti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……そして、単なるフィクションと片付けず、この内容をもっともっと理解しようと努力しなければならない。",
+		   NULL, "... e devo anche cercare di capire più a fondo il loro contenuto.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　三四さんは確か、連続怪死事件を、オヤシロさま信仰の復興のため、御三家が起こしていると言ってなかったっけ…？",
+		   NULL, "Ricordo che Miyo-san ha detto che le Tre Famiglie sono responsabili della serie di morti misteriose, e che stanno cercando di riportare in auge il culto di Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…今読んだばかりの説によるならば、……寄生虫は、現在の雛見沢という環境を維持しようと常に働くはずだ。",
+		   NULL, "... in base a quanto ho letto... il parassita sta cercando di mantenere un ambiente consono alla sua sopravvivenza qui a Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　寄生虫にとってのもっとも良い環境というのは、太古の鬼ヶ淵村と同じ、完全隔離の村だ。",
+		   NULL, "L'ambiente più sano è uno completamente estraneo al mondo esterno, proprio come lo era l'antica Onigafuchi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　宿主は誰も外へ出ず、彼らにとっては快適に違いない。",
+		   NULL, "Se nessun ospite lascia il villaggio, il parassita deve sentirsi completamente al sicuro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　現在のように、村人たちが買い物などでひょいひょいと村を離れるのは、彼らにとって苦痛なはず。",
+		   NULL, "Non vuole neanche che la gente vada tanto in giro nemmeno se ha bisogno di fare la spesa.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そうなれば、………寄生虫たちは自然と宿主を、オヤシロさま信仰復興に誘導するのではないか。",
+		   NULL, "Ma allora... è il parassita che sta cercando di convincere gli abitanti a ripristinare il culto di Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あれ？",
+		   NULL, "Eh?", Line_WaitForInput);
+	OutputLine(NULL, "　………そう言えばさっき、スクラップ帖のどこかで、鬼の血を最も色濃く受け継ぐのが御三家だって記載があったような気がする。",
+		   NULL, " ... mi pare di aver letto un articolo dove c'era scritto che il sangue dei demoni è più denso negli eredi delle Tre Famiglie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鬼の血を最も色濃く受け継ぐというのは、……つまり、もっとも寄生虫に多く感染し、彼らの支配下にあるということじゃないのか？",
+		   NULL, "Quindi... dentro di loro vivono molti più parassiti rispetto al resto degli abitanti... e sono più soggetti al loro controllo.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　確かに御三家は、鬼ヶ淵村時代への逆行を画策しているようにも見える。",
+		   NULL, "Le Tre Famiglie vogliono riportare il villaggio a quando si chiamava ancora Onigafuchi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ダム戦争以降の綿流しの復興など、明治に廃れた信仰を現代に蘇らせようとしているように思える節がある。",
+		   NULL, "Indire il festival del Watanagashi dopo le proteste per la diga può essere visto come un desiderio implicito di riaccendere la fede svanita durante il periodo Meiji.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その御三家、特に園崎家は、地域や公共機関に強力な影響力を持っている…。",
+		   NULL, "Le Tre Famiglie, soprattutto i Sonozaki, hanno molta influenza sulla regione e all'interno degli enti pubblici...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……何だこれ…。",
+		   NULL, "... che significa...?", Line_WaitForInput);
+	OutputLine(NULL, "こんな出来の悪い仮説なのに、……ぺたぺたとピースが埋まっていく。",
+		   NULL, " Credevo che questa teoria fosse la meno attendibile... ma i pezzi si incastonano uno dopo l'altro.", Line_WaitForInput);
+	OutputLine(NULL, "こんな滅茶苦茶なジグソーパズルは初めてだ。",
+		   NULL, " Che folle puzzle che ho iniziato.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　馬鹿馬鹿しいと思う気持ちと、実はとんでもない事実が明かされようとしている気持ちで、頭の中がぐるぐると渦を巻く。",
+		   NULL, "È come se avessi esaurito tutte le mie funzioni cerebrali e adesso fossi in uno stato di vuoto totale. Parte di me vuole scherzarci su, ma un'altra non riesce a vederci altro se non la pura verità.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…その中央を覗き込もうとすると、渦に酔って、落ちて溺れてしまいそうだった。",
+		   NULL, "... se cerco di tornare al punto focale della faccenda, mi sembra quasi di affogare in un mulinello impetuoso.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/file", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…………もっと真剣に、腰を据えて読もう。",
+		   NULL, "... devo leggere con attenzione.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何か真実があるはずなんだ。",
+		   NULL, "Perché qui c'è scritta la verità.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………茨城へ引っ越して以来、ずっと私の生活を狂わせてきた不幸の元凶。",
+		   NULL, "... quella che ha reso la mia vita un inferno da quando mi sono trasferita a Ibaraki.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お母さんの離婚も、私の自暴自棄も、みんなみんな全てに説明がつく真相がもうじきで判明しそうなのだ…！",
+		   NULL, "Se scopro cosa sta succedendo davvero, allora troverò una spiegazione al divorzio dei miei genitori e alle mie crisi...!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeOutBGM( 0, 300, FALSE );
+	PlaySE( 0, "s_knock", 56, 64 );
+	DrawScene( "background/si_h2_01", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その時、突然の荒々しいノックに私は飛び上がった。",
+		   NULL, "In quel momento, un bussare improvviso alla mia porta mi fa salire il cuore in gola.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　慌ててスクラップ帖をクッションの下に隠す。",
+		   NULL, "Nascondo i quaderni sotto al cuscino.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "yoru", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Papà di Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900063", 256, TRUE);
+	OutputLine(NULL, "「礼奈、電話が来てるぞ。」",
+		   NULL, "\"Reina, ti vogliono al telefono.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200693", 256, TRUE);
+	OutputLine(NULL, "「電話？",
+		   NULL, "\"Per me?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200694", 256, TRUE);
+	OutputLine(NULL, "　こんな時間に？",
+		   NULL, " A quest'ora?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200695", 256, TRUE);
+	OutputLine(NULL, "　……誰だろ。」",
+		   NULL, " ... chi è?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Papà di Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900064", 256, TRUE);
+	OutputLine(NULL, "「本屋さんからだぞ。",
+		   NULL, "\"Una libreria, da quanto ho capito.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900065", 256, TRUE);
+	OutputLine(NULL, "本の取り寄せとか頼んだのか？",
+		   NULL, " Hai ordinato dei libri per caso?", Line_WaitForInput);
+
+	FadeOutBGM( 0, 300, FALSE );
+	PlaySE( 0, "wa_023", 56, 64 );
+
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900066", 256, TRUE);
+	OutputLine(NULL, "　興宮書房の大石さんって人からだ。」",
+		   NULL, " Un tale ha detto di essere Ooishi-san, dalla libreria Okinomiya.\"", Line_Normal);
+	ClearMessage();
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+
+	CallScript( "&eye" );
+}
