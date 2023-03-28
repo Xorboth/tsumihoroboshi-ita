@@ -371,7 +371,7 @@ void main()
 		   NULL, "\"Forse sei rimasta coinvolta in una qualche loro faccenda senza nemmeno rendertene conto.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700128", 256, TRUE);
 	OutputLine(NULL, "私の読みでは連中、あなたが園崎本家周辺を嗅ぎ回っていて、何かとんでもない事実を掴んだ、もしくは掴んだと思い込んでるのどちらかじゃないかと思います。",
-		   NULL, " Io credo che tu abbia ficcato il naso negli affari della famiglia Sonozaki e scoperto un loro segreto, o perlomeno questo è giò che credono.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Io credo che tu abbia ficcato il naso negli affari della famiglia Sonozaki e scoperto un loro segreto, o perlomeno questo è ciò che credono.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700129", 256, TRUE);
 	OutputLine(NULL, "それは竜宮さんが日々の生活でしてしまうような些細なものじゃない。",

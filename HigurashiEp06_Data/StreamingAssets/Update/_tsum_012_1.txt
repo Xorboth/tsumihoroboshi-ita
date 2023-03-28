@@ -1275,7 +1275,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　きっと、今度こそこの迷路の出口に辿り着けるはず。",
-		   NULL, "Sono certo che riuscirò a trovare l'uscita.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sono certa che riuscirò a trovare l'uscita.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DrawScene( "background/aka2", 400 );

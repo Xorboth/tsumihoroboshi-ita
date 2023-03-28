@@ -203,7 +203,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　相手は、建設省を占領することを念頭に訓練を重ね、実際に大臣の孫を誘拐してのけたような恐ろしいやつらだ。",
-		   NULL, "Sono molto pericolosi. Hanno ricevuto un addestramento che gli ha rasi in grado di attaccare il Ministero delle Infrastrutture, permettendogli anche di rapire il nipote del Ministro.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sono molto pericolosi. Hanno ricevuto un addestramento che li ha resi in grado di attaccare il Ministero delle Infrastrutture, permettendogli anche di rapire il nipote del Ministro.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1141,7 +1141,7 @@ void main()
 		   NULL, "Ha il respiro affannoso a causa della fretta con cui ha pedalato.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Abitante</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Agente</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17001", 256, TRUE);
 	OutputLine(NULL, "「はぁ、はぁ！",
 		   NULL, "\"Anf, anf!", Line_WaitForInput);
@@ -1173,7 +1173,7 @@ void main()
 		   NULL, "\"Questa è la mia stanza... è qui c'è la mia cassetta dei risparmi, aperta...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Abitante</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Agente</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17003", 256, TRUE);
 	OutputLine(NULL, "「ご主人、これはその時のまま？",
 		   NULL, "\"L'ha trovata in questo stato?", Line_WaitForInput);
@@ -1191,7 +1191,7 @@ void main()
 		   NULL, " Ho smosso un po' il contenuto per controllare cosa mancasse...\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Abitante</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Agente</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17005", 256, TRUE);
 	OutputLine(NULL, "「ふむふむ、それで取られたものは？」",
 		   NULL, "\"Capisco. Che cos'hanno preso?\"", GetGlobalFlag(GLinemodeSp));
@@ -1203,7 +1203,7 @@ void main()
 		   NULL, "\"Hanno lasciato il libretto bancario e il mio sigillo personale, ma... mancano i contanti.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Abitante</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Agente</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17006", 256, TRUE);
 	OutputLine(NULL, "「通帳と印鑑、大丈夫だったんですかぁ。",
 		   NULL, "\"Non hanno preso il libretto e il sigillo?", Line_WaitForInput);
@@ -1213,7 +1213,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17008", 256, TRUE);
 	OutputLine(NULL, "……最近は、通帳から足が付くと思って、プロは現金しか持ってかないんですよねー。",
 		   NULL, " ... i ladri di professione non prendono mai i libretti perché sanno che è facile rintracciarli una volta usati.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Abitante</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Agente</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17009", 256, TRUE);
 	OutputLine(NULL, "…こりゃあだいぶ手馴れた空き巣かなぁ。",
 		   NULL, "... forse si è trattato di un veterano.", Line_WaitForInput);
@@ -1231,7 +1231,7 @@ void main()
 		   NULL, "\"... uhm... è da parecchio che non li controllavo... ma credo che ci fossero almeno un centinaio di banconote da 10,000 yen.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Abitante</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Agente</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17012", 256, TRUE);
 	OutputLine(NULL, "「あーーーそう……。",
 		   NULL, "\"Accidenti...", Line_WaitForInput);
@@ -1246,7 +1246,7 @@ void main()
 		   NULL, "\"... no, non lo sapeva nessuno... ma deduco che quella donna sapesse che tenevo i contanti nella cassetta...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Abitante</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Agente</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17014", 256, TRUE);
 	OutputLine(NULL, "「あの女？",
 		   NULL, "\"'Quella donna'?", Line_WaitForInput);
@@ -1878,7 +1878,7 @@ void main()
 		   NULL, "Mio padre indica il punto in cui sono solita lasciare la bici.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Abitante</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Agente</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17016", 256, TRUE);
 	OutputLine(NULL, "「ふぅーむ…。",
 		   NULL, "\"Uhm...", Line_WaitForInput);

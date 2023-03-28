@@ -84,7 +84,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　父親は患者とのコミュニケーションを深めることで、家族仲を一層強めて、その不安を和らげることが何よりも大切となります。",
-		   NULL, "Approfondendo il legame con quest'ultimo, il loro legame faligliare si rinforzerà e allevierà il suo stress.", Line_Normal);
+		   NULL, "Approfondendo il legame con quest'ultimo, il loro legame famigliare si rinforzerà e allevierà il suo stress.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
