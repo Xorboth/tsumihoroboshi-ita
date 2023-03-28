@@ -1,2 +1,6 @@
+1.0.1 [XX-XX-2023]:
+ - Aggiornata la traduzione all'ultima versione della patch per Tsumihoroboshi di 07th-Mod (commit bae96265f1ef9cd8ce4a818c7fa624b2bc4752af del 08-03-2023)
+ - Aggiornata la traduzione, correggendo vari errori segnalati
+
 1.0.0 [01-10-2022]:
  - Prima release pubblica!
