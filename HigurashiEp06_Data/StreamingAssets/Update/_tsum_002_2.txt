@@ -296,31 +296,31 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100020", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5000", 256, TRUE);
 	OutputLine(NULL, "「何だかさっきから俺の親の話ばかりで恥ずかしいぞ。",
 		   NULL, "\"Abbiamo parlato abbastanza dei miei.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100021", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5001", 256, TRUE);
 	OutputLine(NULL, "レナのとこはどうだよ？",
 		   NULL, " Parliamo dei tuoi, Rena.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100022", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5002", 256, TRUE);
 	OutputLine(NULL, "　仲いいか？」",
 		   NULL, " Vanno d'accordo?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200021", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5000", 256, TRUE);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Sì.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170200022", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5001", 256, TRUE);
 	OutputLine(NULL, "仲いいよ。",
 		   NULL, " Molto.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170200023", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5002", 256, TRUE);
 	OutputLine(NULL, "いっつもべったりしてる。",
 		   NULL, " Fanno sempre i piccioncini.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170200024", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5003", 256, TRUE);
 	OutputLine(NULL, "…だからね、はぅ。",
 		   NULL, " ... quindi, hauu...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170200025", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5004", 256, TRUE);
 	OutputLine(NULL, "レナに居場所がない〜〜。」",
 		   NULL, " mi sento sempre la terza incomoda〜〜.\"", Line_Normal);
 	ClearMessage();
@@ -357,7 +357,7 @@ void main()
 	DrawSceneWithMask( "background/Mati4", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100023", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5003", 256, TRUE);
 	OutputLine(NULL, "「あっはっはっはっはっは！」",
 		   NULL, "\"Ahahahahahahah!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -366,16 +366,16 @@ void main()
 	ModDrawCharacterWithFiltering(2, 2, "sprite/re2b_bikkuri_b1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200026", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5005", 256, TRUE);
 	OutputLine(NULL, "「突然笑い出すなんて、…な、何かな、かな？」",
 		   NULL, "\"C-come mai questa risata all'improvviso? A-all'improvviso...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100024", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5004", 256, TRUE);
 	OutputLine(NULL, "「レナの家のおばさんがどんな人かものすごい気になるぞ。",
 		   NULL, "\"Tua mamma dev'essere proprio un tipo interessante.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100025", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5005", 256, TRUE);
 	OutputLine(NULL, "俺も今度、レナのおばさんに会ってみることにするぜー！！」",
 		   NULL, " La prossima volta verrò a casa tua e me la farai conoscere!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -384,19 +384,19 @@ void main()
 	ModDrawCharacter(2, 2, "sprite/re2a_bikkuri_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200027", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5006", 256, TRUE);
 	OutputLine(NULL, "「えッ？！",
 		   NULL, "\"Eh?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170200028", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5007", 256, TRUE);
 	OutputLine(NULL, "　だだ、だめだよ、だめだめ！！」",
 		   NULL, " N-n-no! Non voglio!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100026", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5006", 256, TRUE);
 	OutputLine(NULL, "「レナだって俺のお袋と話をしてるじゃないかよ。",
 		   NULL, "\"Ma tu parli spesso con la mia.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100027", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5007", 256, TRUE);
 	OutputLine(NULL, "ならお相子だろー？」",
 		   NULL, " Mi sembra normale ricambiare il favore.\"", Line_Normal);
 	ClearMessage();
@@ -405,22 +405,22 @@ void main()
 	ModDrawCharacter(2, 2, "sprite/re2a_hau_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200029", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5008", 256, TRUE);
 	OutputLine(NULL, "「はぅ、だって、圭一くんなんかが会ってもいいことないよ…。",
 		   NULL, "\"Hau, ma la mamma non è una persona speciale come credi, Keiichi-kun...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170200030", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5009", 256, TRUE);
 	OutputLine(NULL, "全然立派な人じゃないし…。」",
 		   NULL, " è talmente normale da essere noiosa.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100028", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5008", 256, TRUE);
 	OutputLine(NULL, "「会う前からかなり予想はついてるんだけどなぁ〜！",
 		   NULL, "\"Riesco persino a immaginarla senza averla mai vista!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100029", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5009", 256, TRUE);
 	OutputLine(NULL, "　ズバリ！",
 		   NULL, " Flash!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100030", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5010", 256, TRUE);
 	OutputLine(NULL, "　レナにそっくりだろ？！」",
 		   NULL, " Completamente identica a te!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -429,28 +429,28 @@ void main()
 	ModDrawCharacter(2, 2, "sprite/re2b_bikkuri_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200031", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5010", 256, TRUE);
 	OutputLine(NULL, "「えッ、えッ？！",
 		   NULL, "\"Eh? Eh?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170200032", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5011", 256, TRUE);
 	OutputLine(NULL, "　そそ、そんなことない〜〜！",
 		   NULL, " N-no che non lo è〜!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170200033", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5012", 256, TRUE);
 	OutputLine(NULL, "　全然似てないよぅ！」",
 		   NULL, " Non mi somiglia per niente!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100031", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5011", 256, TRUE);
 	OutputLine(NULL, "「…その過剰な反応が、雄弁に答えを物語ってるぞ。",
 		   NULL, "\"... e allora perché ti comporti così? La tua reazione è un libro aperto.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100032", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5012", 256, TRUE);
 	OutputLine(NULL, "とにかく！！",
 		   NULL, " Comunque!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100033", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5013", 256, TRUE);
 	OutputLine(NULL, "　レナのおばさんに興味が出たぜ！！",
 		   NULL, " Voglio conoscere tua mamma!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100034", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5014", 256, TRUE);
 	OutputLine(NULL, "　今度ご挨拶にうかがうからな、覚悟してやがれー！」",
 		   NULL, " Presto andrò a farle una visitina, perciò preparati!\"", Line_Normal);
 	ClearMessage();
@@ -459,27 +459,25 @@ void main()
 	ModDrawCharacter(2, 2, "sprite/re2a_hau_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200034", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5013", 256, TRUE);
 	OutputLine(NULL, "「はぅ〜〜、そんなのだめだめだめー！",
 		   NULL, "\"Hauu〜, non lo fare non lo fare!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170200035", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5014", 256, TRUE);
 	OutputLine(NULL, "　圭一くんがレナの家に来たら、レナ怒るよすごい怒る！」",
 		   NULL, " Sappi che mi arrabbierò moltissimo se verrai davvero a casa mia!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100035", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5015", 256, TRUE);
 	OutputLine(NULL, "「普段、お宅のお嬢さんに大変お世話になっております…。",
 		   NULL, "\"'Sua figlia mi ha sempre aiutato nel momento del bisogno, signora'.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100036", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5016", 256, TRUE);
 	OutputLine(NULL, "いや、お嬢さんと真剣なお付き合いをさせてもらってる者です、",
-		   NULL, " Anzi, forse sarebbe più divertente se dicessi:", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 5000 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " Anzi, forse sarebbe più divertente se dicessi:", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi5017", 256, TRUE);
 	OutputLine(NULL, "くらいの方が面白いかもしれないなー！！",
 		   NULL, " 'Signora, frequento sua figlia da tempo e ho intenzioni serie.'", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100037", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5018", 256, TRUE);
 	OutputLine(NULL, "　わっはっはっは！」",
 		   NULL, " Ahahahahah!\"", Line_Normal);
 	ClearMessage();
@@ -488,18 +486,16 @@ void main()
 	ModDrawCharacter(2, 2, "sprite/re2a_komaru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200036", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5015", 256, TRUE);
 	OutputLine(NULL, "「……はぅ…、",
-		   NULL, "\"... hau...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1500 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "\"... hau...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5016", 256, TRUE);
 	OutputLine(NULL, "もしうちに来たら、……魅ぃちゃんたちに、圭一くんのちっちゃい頃の話をしちゃおうかな、…かな。」",
 		   NULL, " se ti vedo fuori di casa... racconterò a Mii-chan e alle altre tutte le storielle di quand'eri piccolo...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100038", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5019", 256, TRUE);
 	OutputLine(NULL, "「う、……ちっちゃい頃とは具体的にはいくつの頃のエピソードだ？」",
 		   NULL, "\"Ugh... d-di che genere di storielle stiamo parlando, esattamente?\"", Line_Normal);
 	ClearMessage();
@@ -508,40 +504,33 @@ void main()
 	ModDrawCharacter(2, 2, "sprite/re2a_hau_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200037", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5017", 256, TRUE);
 	OutputLine(NULL, "「えっと、…レナがおばさまに聞いたのは、",
-		   NULL, "\"Vediamo... tua mamma mi ha raccontato", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 3000 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "\"Vediamo... tua mamma mi ha raccontato", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5018", 256, TRUE);
 	OutputLine(NULL, "４つの時の話と、",
-		   NULL, " quella di quando avevi quattro anni,", Line_Continue);
+		   NULL, " quella di quando avevi quattro anni,", Line_WaitForInput);
 
 	PlaySE( 0, "s_boyoon", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	// (backup) SetValidityOfInput( TRUE );
-
+	ModPlayVoiceLS(4, 2, "org/rena5019", 256, TRUE);
 	OutputLine(NULL, "６つの時の滑り台の話と、",
-		   NULL, " quella di quando ne avevi sei ed eri salito sullo scivolo,", Line_Continue);
+		   NULL, " quella di quando ne avevi sei ed eri salito sullo scivolo,", Line_WaitForInput);
 
 	PlaySE( 0, "s_boyoon", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	// (backup) SetValidityOfInput( TRUE );
+	ModPlayVoiceLS(4, 2, "org/rena5020", 256, TRUE);
 	OutputLine(NULL, "…あとあと…、」",
 		   NULL, " quella in cui...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100039", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5020", 256, TRUE);
 	OutputLine(NULL, "「すみませんでしたレナさん。",
 		   NULL, "\"Chiedo umilmente perdono, Rena-san.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100040", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5021", 256, TRUE);
 	OutputLine(NULL, "レナさんの目の黒い内は、竜宮家の半径１００ｍには絶対近寄らないようにするっす。」",
 		   NULL, " Non mi avvicinerò mai nel raggio di 100 metri intorno al perimetro di casa tua finché sarò in vita.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -550,7 +539,7 @@ void main()
 	ModDrawCharacter(2, 2, "sprite/re2b_warai_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170200038", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5021", 256, TRUE);
 	OutputLine(NULL, "「あはははははは！　ありがとー！」",
 		   NULL, "\"Ahahahahahah! Grazie!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

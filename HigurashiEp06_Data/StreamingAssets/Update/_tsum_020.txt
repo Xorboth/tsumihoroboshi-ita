@@ -1848,22 +1848,22 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201122", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5098", 256, TRUE);
 	OutputLine(NULL, "「楽になれるって？！",
 		   NULL, "\"Mi aiuterà a stare meglio?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201123", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5099", 256, TRUE);
 	OutputLine(NULL, "　はッ！！",
 		   NULL, " Che?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201124", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5100", 256, TRUE);
 	OutputLine(NULL, "　私にはわかってる。それでしょ？！",
 		   NULL, " Io so cos'è quella roba!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201125", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5101", 256, TRUE);
 	OutputLine(NULL, "　富竹さんを殺した薬物の正体は！！",
 		   NULL, " È la droga che ha ucciso Tomitake-san!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170201126", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5102", 256, TRUE);
 	OutputLine(NULL, "　原始の力を持った寄生虫！！",
 		   NULL, " È il parassita alla massima potenza!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170201127", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5103", 256, TRUE);
 	OutputLine(NULL, "　うじ湧き病を再現させる恐ろしい注射！！」",
 		   NULL, " Mi farai ammalare con la malattia delle larve!!\"", Line_Normal);
 	ClearMessage();
@@ -2166,23 +2166,23 @@ void main()
 	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500157", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5002", 256, TRUE);
 	OutputLine(NULL, "「私も昔は、小さな狂いが生じるたびに直そうと奔走したものだけど。",
 		   NULL, "\"In passato, ho sempre cercato di sistemare le cose ogni singola volta che ne avevo l'occasione.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500158", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5003", 256, TRUE);
 	OutputLine(NULL, "……途中からね、疲れてきちゃったの。",
 		   NULL, " ... ma mi sono stufata.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500159", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5004", 256, TRUE);
 	OutputLine(NULL, "………“この”雛見沢にもう興味ない。",
 		   NULL, " ...... 'questa' Hinamizawa non m'interessa più.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500160", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5005", 256, TRUE);
 	OutputLine(NULL, "“次の”雛見沢を探しに行くことにするわ。",
 		   NULL, " Andrò alla ricerca della 'prossima' Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500161", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5006", 256, TRUE);
 	OutputLine(NULL, "…でも、あなたには“この”雛見沢しかない。",
 		   NULL, "... peccato che tu abbia solo 'questa' a disposizione.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500162", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5007", 256, TRUE);
 	OutputLine(NULL, "だから、せいぜいがんばって生きなさいな。」",
 		   NULL, " Spero che riuscirai a vivere nel migliore dei modi.\"", Line_Normal);
 	ClearMessage();

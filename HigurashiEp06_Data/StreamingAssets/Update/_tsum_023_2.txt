@@ -179,25 +179,19 @@ void main()
 	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201341", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5130", 256, TRUE);
 	OutputLine(NULL, "「…………もうね、…だめなの。",
 		   NULL, "\"... io... non ce la faccio più.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201342", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5131", 256, TRUE);
 	OutputLine(NULL, "………今のこの瞬間も、",
-		   NULL, " ... anche adesso", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1900 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " ... anche adesso", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5132", 256, TRUE);
 	OutputLine(NULL, "…私の全身の中で、",
-		   NULL, " sento le larve strisciare", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1900 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " sento le larve strisciare", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5133", 256, TRUE);
 	OutputLine(NULL, "うじ虫が蠢いてて、",
-		   NULL, " lungo il mio corpo.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 2500 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " lungo il mio corpo.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5134", 256, TRUE);
 	OutputLine(NULL, "…痒くて痒くて、……溢れ出しそうなの…。」",
 		   NULL, " ... mi prudono da impazzire e... sento come se stessero per uscire dalla mia pelle...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

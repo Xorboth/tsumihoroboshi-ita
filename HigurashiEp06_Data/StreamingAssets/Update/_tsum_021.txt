@@ -1013,10 +1013,10 @@ void main()
 	ModDrawCharacter(0, 2, "sprite/re2b_okoru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201202", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5104", 256, TRUE);
 	OutputLine(NULL, "「そんなのは決まってるでしょ。",
 		   NULL, "\"La risposta è semplice.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201203", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5105", 256, TRUE);
 	OutputLine(NULL, "三四さんの暴いた致命的な事実は狂信者たちの偉大な計画の実現、」",
 		   NULL, " Miyo-san mi ha rivelato l'esistenza della cospirazione, e tutti i seguaci del...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1153,17 +1153,17 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100874", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5070", 256, TRUE);
 	OutputLine(NULL, "「………俺は、レナの目を覚ましに来たんだ。",
 		   NULL, "\"... sono qui per farti aprire gli occhi.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100875", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5071", 256, TRUE);
 	OutputLine(NULL, "お前は鷹野さんのスクラップ帖のせいで、とんでもない狂った夢に取り憑かれてる。",
 		   NULL, " Ti sei fatta convincere da una congettura palesemente inventata riportata nei quaderni di Takano-san.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100876", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5072", 256, TRUE);
 	OutputLine(NULL, "……最初の内は面白ぇ話だと思ってたが、そろそろ洒落にならないと思い始めた。",
 		   NULL, " ... all'inizio, anch'io la trovavo interessante, ma ormai è chiaro che stesse esagerando...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100877", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5073", 256, TRUE);
 	OutputLine(NULL, "…………お前は今、ちょっとした病気なんだよ！」",
 		   NULL, "e tutto solo perché adesso sei malata!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2284,13 +2284,13 @@ void main()
 	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201293", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5109", 256, TRUE);
 	OutputLine(NULL, "「児童連続襲撃事件。",
 		   NULL, "\"La serie di attacchi misteriosi ai bambini.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201294", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5110", 256, TRUE);
 	OutputLine(NULL, "すごいすごい、雛見沢村連続怪死事件に負けないくらいインパクトあるよ？",
 		   NULL, " Niente male! Suona proprio come la serie di morti misteriose di Hinamizawa.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201295", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5111", 256, TRUE);
 	OutputLine(NULL, "　あははは、あっはっはっは！！」",
 		   NULL, " Ahahahah! Ahahahah!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2302,31 +2302,31 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201296", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5112", 256, TRUE);
 	OutputLine(NULL, "「何がどう違うの？",
 		   NULL, "\"Non è stato cosa?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201297", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5113", 256, TRUE);
 	OutputLine(NULL, "　数週間の間に、ひと気のないところを歩く小さな子どもばかりを狙って、通り掛かりにモデルガンで撃ち付ける恐ろしい事件だった。",
 		   NULL, " Hai sparato con una pistola ad aria compressa a delle bambine che camminavano lungo strade deserte. Che violenza.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170201298", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5114", 256, TRUE);
 	OutputLine(NULL, "市内一帯は一時期騒然。ＰＴＡが交差点ごとに立ち、集団下校にもなったんだってねぇ？",
 		   NULL, "Hai terrorizzato l'intera città per qualche tempo, arrivando addirittura a mobilitare il comitato genitori-insegnanti per tenere d'occhio i bambini nel tragitto tra casa e scuola.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps2/02/170201299", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5115", 256, TRUE);
 	OutputLine(NULL, "　目に当って大怪我した子もいたんでしょ？",
 		   NULL, "Hai colpito una delle bambine negli occhi, ferendola gravemente.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201300", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5116", 256, TRUE);
 	OutputLine(NULL, "　幸い、後遺症にはならなかったそうだけど。",
 		   NULL, " Per fortuna il danno non è stato permanente.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201301", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5117", 256, TRUE);
 	OutputLine(NULL, "あははははは！",
 		   NULL, " Ahahahahah!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170201302", 540, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5118", 256, TRUE);
 	OutputLine(NULL, "　モデルガンなんて武器を持ちながら、それでも小さな子しか狙わない、嫌らしさ。",
 		   NULL, " Sparare ai bambini con una pistola ad aria compressa. Vergognoso.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201303", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5119", 256, TRUE);
 	OutputLine(NULL, "そんなことして何が楽しかったの？",
 		   NULL, "Cos'è che ti piaceva tanto?", Line_Normal);
 	ClearMessage();

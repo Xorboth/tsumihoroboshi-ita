@@ -2932,7 +2932,7 @@ void main()
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700441", 256, TRUE);
 	OutputLine(NULL, "…………そうだ、ジジィに聞いてみよう。",
 		   NULL, "...... sì, lo chiederò al vecchio.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/170700442", 540, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5011", 256, TRUE);
 	OutputLine(NULL, " あぁすみません、署に連絡して鑑識のじいさまがいるか聞いてみてください。」",
 		   NULL, " Scusate, potete fare una telefonata al quartier generale e chiedere se quel vecchiardo della scientifica è ancora lì?\"", Line_Normal);
 	ClearMessage();
@@ -2991,7 +2991,7 @@ void main()
 		   NULL, " Abbiamo messo una cimice su uno degli ostaggi. Pare che la ragazza abbia sparso benzina per tutta la classe.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700449", 256, TRUE);
 	OutputLine(NULL, "ただ、撒いた量が１８リットル缶か５リットル缶かわかりません。",
-		   NULL, " Solo che non sappiamo se si tratti di una tanica da 18 litri o di una da cinque.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Solo che non sappiamo se si tratti di una tanica da diciotto litri o di una da cinque.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700450", 256, TRUE);
 	OutputLine(NULL, "…両方のケースのですね、最悪の場合について教えてもらえませんかねぇ。」",
@@ -3654,10 +3654,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700477", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5012", 256, TRUE);
 	OutputLine(NULL, "「あぁ……あれだ。",
 		   NULL, "\"Ah...... ma certo.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700478", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi5013", 256, TRUE);
 	OutputLine(NULL, "…俺さ、彼女との電話で、岐阜県警さんの検死で１日ズレがあったかもしれないですよ〜って言っちゃったことがあったんですよ。」",
 		   NULL, " Una volta, al telefono, le ho detto che l'autopsia effettuata dagli agenti della prefettura di Gifu ha dimostrato che il giorno della morte di Takano non corrisponde a quanto accaduto.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5370,24 +5370,24 @@ void main()
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101246", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5087", 256, TRUE);
 	OutputLine(NULL, "「信じてねえのはレナの方だろうがああぁ！！！",
 		   NULL, "\"Sei tu che non ti fidi di me, Rena!!!", Line_Continue);
 
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 1, "ps2/01/170101247", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5088", 256, TRUE);
 	OutputLine(NULL, "　今は俺を信じろ、黙って俺を信じやがれ！！！",
 		   NULL, " Credimi e basta, senza fare storie!!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170101248", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5089", 256, TRUE);
 	OutputLine(NULL, "　それは絶対にレナのためになる。",
 		   NULL, " Tutto questo è per il tuo bene.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170101249", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5090", 256, TRUE);
 	OutputLine(NULL, "前回の惨劇の主人公がそうだと言ってるんだよ！！",
 		   NULL, " Te lo dico in quanto protagonista di questa tragedia a cui sto assistendo!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170101250", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5091", 256, TRUE);
 	OutputLine(NULL, "　先代主人公の言うことを大人しく聞きやがれ！！」",
 		   NULL, "Sta' zitta e segui le mie indicazioni!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

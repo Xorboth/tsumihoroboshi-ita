@@ -222,10 +222,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200710", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5067", 256, TRUE);
 	OutputLine(NULL, "「綿流しの夜、私たちは三四さんと、あと富竹さんに会ったよね？",
 		   NULL, "\"Abbiamo incontrato Miyo-san e Tomitake-san la sera del Watanagashi, ricordi?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200711", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5068", 256, TRUE);
 	OutputLine(NULL, "　あの直後に、２人が襲われたんだって。",
 		   NULL, " Sono stati aggrediti poco tempo dopo.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -235,7 +235,7 @@ void main()
 	ModDrawCharacter(1, 8, "sprite/tomi1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200712", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5069", 256, TRUE);
 	OutputLine(NULL, "……富竹さんは……、「オヤシロさまの祟り」に遭って、喉を掻き毟って死んだ。",
 		   NULL, "... Tomitake-san... è stato maledetto da Oyashiro-sama. Si è dilaniato la gola con le proprie mani ed è morto dissanguato.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -246,7 +246,7 @@ void main()
 	ModDrawCharacter(2, 9, "sprite/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200713", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5070", 256, TRUE);
 	OutputLine(NULL, "三四さんは、岐阜の山中で焼き殺されていたと言ってたの。」",
 		   NULL, "Miyo-san invece è stata bruciata tra le montagne della prefettura di Gifu.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -446,11 +446,11 @@ void main()
 	ModDrawCharacter(0, 2, "sprite/re2b_nande_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200735", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5071", 256, TRUE);
 	OutputLine(NULL, "「例えば、予備知識のないうじ湧きについては私自らがその存在を検証できているけど、…他にもたくさん、未検証のことがあるの。",
 		   NULL, "\"Per esempio, io stessa sono la dimostrazione che la 'malattia delle larve' può scatenarsi anche senza averne mai saputo nulla... ma sono troppi i punti oscuri.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200736", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5072", 256, TRUE);
 	OutputLine(NULL, "それらを埋めていかないと、…私ですらにわかには信じられない。」",
 		   NULL, "So che non mi crederai, e nemmeno io ci riesco, però devo almeno provarci.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -947,7 +947,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100573", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5049", 256, TRUE);
 	OutputLine(NULL, "「…ってことはつまり、………オヤシロさま信仰の狂信者たちが、…裏で暗躍しているってことか？」",
 		   NULL, "\"... fammi capire... secondo te... i responsabili di questi crimini... sono dei fanatici religiosi che inneggiano a Oyashiro-sama\"?", Line_Normal);
 	ClearMessage();
@@ -973,13 +973,13 @@ void main()
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100574", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5050", 256, TRUE);
 	OutputLine(NULL, "「…じゃあ、雛見沢村連続怪死事件ってのは、雛見沢御三家、",
 		   NULL, "\"... ma allora, le Tre Famiglie...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100575", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5051", 256, TRUE);
 	OutputLine(NULL, "…いや、オヤシロさまを信仰する狂信的な集団の仕業…。",
 		   NULL, " anzi, i fanatici di Oyashiro-sama, hanno orchestrato la serie di morti misteriose di Hinamizawa...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100576", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5052", 256, TRUE);
 	OutputLine(NULL, "……なら待てよ、どうして鷹野さんが殺されなきゃならないんだ？」",
 		   NULL, " però non mi torna una cosa. Per quale motivo avrebbero dovuto uccidere Takano-san?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1629,7 +1629,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s09/14/173400011", 256, TRUE);
 	OutputLine(NULL, "「忘れてぇな。",
-		   NULL, "\"No farci caso.", Line_WaitForInput);
+		   NULL, "\"Non farci caso.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 14, "ps3/s09/14/173400012", 256, TRUE);
 	OutputLine(NULL, "ごめんな兄ちゃん。",
 		   NULL, " Scusa il disturbo, ragazzo.", Line_WaitForInput);

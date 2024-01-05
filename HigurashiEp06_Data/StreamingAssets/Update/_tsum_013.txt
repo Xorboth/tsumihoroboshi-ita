@@ -364,20 +364,20 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200622", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5042", 256, TRUE);
 	OutputLine(NULL, "「………つまり、三四さんの説によるならば、",
 		   NULL, "\"... in altre parole, secondo la tua teoria,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200623", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5043", 256, TRUE);
 	OutputLine(NULL, "連続怪死事件は、オヤシロさまを崇拝する狂信的団体が雛見沢に潜んでいて、オヤシロさまの力を世に示そうとしている……ということなんですか？」",
 		   NULL, " a Hinamizawa si cela un gruppo di cultisti votati a Oyashiro-sama... che vogliono mostrare il potere del loro dio mettendo in atto la serie di morti misteriose... giusto?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s09/09/170900017", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano5000", 256, TRUE);
 	OutputLine(NULL, "「狂信的というか、原理主義的というかは紙一重だけどね。",
 		   NULL, "\"Cultisti o fondamentalisti, poco importa. La linea di demarcazione è molto sottile.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s09/09/170900018", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano5001", 256, TRUE);
 	OutputLine(NULL, "明治以降、村の名前が雛見沢に変わって以来、鬼ヶ淵村が長く続けてきた様々な風習が途絶えている。",
 		   NULL, "Durante il Periodo Meiji, quando il nome del villaggio divenne Hinamizawa, le tradizioni e gli usi di Onigafuchi vennero interrotti bruscamente.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1152,36 +1152,36 @@ void main()
 	ModPlayBGM( 0, "hig_sample_kyouki", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200658", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5044", 256, TRUE);
 	OutputLine(NULL, "「赤黒い、…無数のうじ虫だったんです…！",
 		   NULL, "\"Era... un numero infinito... di larve rosse sangue...!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200659", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5045", 256, TRUE);
 	OutputLine(NULL, "　それらは、首から血が零れるのと一緒に、わらわらと湧き出して来ました。",
 		   NULL, " A ogni goccia, si dimenavano e cadevano una dopo l'altra lungo il mio collo.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200660", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5046", 256, TRUE);
 	OutputLine(NULL, "しかもそいつらは、外へ溢れまいと、傷口から再び中へ戻っていこうとわらわら蠢いていたんです！！",
 		   NULL, " Ma volevano rimanere nel mio corpo, così risalivano lungo la pelle e tornavano dentro la ferita!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200661", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5047", 256, TRUE);
 	OutputLine(NULL, "　……私、そんな気持ち悪いのに体内に戻られたくなくって、……掻きました、首の傷を引っ掻いてほじくり出そうとしました。",
 		   NULL, "... io non volevo avere quelle cose inquietanti dentro di me... così, mi grattai e allargai la ferita che avevo sul collo per tirarle fuori.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200662", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5048", 256, TRUE);
 	OutputLine(NULL, "でも、それ以上は痛くて血塗れになるばかりで……。",
 		   NULL, " Ma non faceva altro che aumentare il dolore...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200662_1", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5049", 256, TRUE);
 	OutputLine(NULL, "　それで私は急に怖くなりました。",
 		   NULL, "D'un tratto, andai nel panico.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200663", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5050", 256, TRUE);
 	OutputLine(NULL, "私の体の中には…血管いっぱいにあの気持ち悪いうじ虫がぎっしりつまっているんじゃないかって！",
 		   NULL, " Ero terrorizzata al pensiero di tutte quelle larve che vivevano nelle mie vene!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200664", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5051", 256, TRUE);
 	OutputLine(NULL, "　それで私は………試しに、カミソリで腿の血管を開いてみました。そこなら良く見えると思ったから。",
 		   NULL, "Così... mi tagliai anche all'altezza di una gamba per scoprire se ci fossero anche lì. La gamba era più semplice da vedere del collo.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200665", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5052", 256, TRUE);
 	OutputLine(NULL, "そうしたら、…………溢れてきたんです！！　どばっと、わらわらっとッ！！！」",
 		   NULL, " E da lì....... ne vennero fuori a migliaia!! Tante! Tantissime!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1195,16 +1195,16 @@ void main()
 	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200666", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5053", 256, TRUE);
 	OutputLine(NULL, "「わかってないってば！",
 		   NULL, "\"Invece non capite niente!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200667", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5054", 256, TRUE);
 	OutputLine(NULL, "　そのうじ虫たちは、血と一緒にどばっと溢れ出すけど、すぐに元の血管の中に戻ろうする！！",
 		   NULL, " Le larve sono venute fuori dal mio sangue e hanno cercato di ritornare nel mio corpo!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200668", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5055", 256, TRUE);
 	OutputLine(NULL, "　それがとても痒いんです！！",
 		   NULL, " Mi prudevano da morire!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200669", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5056", 256, TRUE);
 	OutputLine(NULL, "　あああぁあぁ！！」",
 		   NULL, " AAaaAaAAahhHhHhHHHhh!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1225,26 +1225,26 @@ void main()
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200670", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5057", 256, TRUE);
 	OutputLine(NULL, "「私の血管の中のうじ虫をやっつけてぇえぇ！！！",
 		   NULL, "\"Vi prego! Uccidete tutte quelle larve nel mio corpo!!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200671", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5058", 256, TRUE);
 	OutputLine(NULL, "　血を全部抜いて、綺麗にして！！",
 		   NULL, " Toglietemi tutto il sangue dalle vene e ripulitele!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200672", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5059", 256, TRUE);
 	OutputLine(NULL, "　私の血管にはうじ虫がいっぱい詰まってるの！！",
 		   NULL, " Ce ne sono troppe!! Troppe!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200673", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5060", 256, TRUE);
 	OutputLine(NULL, "　どうして信じないの？！",
 		   NULL, " Perché non mi credete?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200674", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5061", 256, TRUE);
 	OutputLine(NULL, "　見せてあげるから！",
 		   NULL, " Adesso vi faccio vedere!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200675", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5062", 256, TRUE);
 	OutputLine(NULL, "　見れば信じるでしょ？！",
 		   NULL, "Mi crederete se le vedrete anche voi!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200676", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5063", 256, TRUE);
 	OutputLine(NULL, "　もう注射はいや、いやいやいやいや！！！」",
 		   NULL, " Non voglio l'iniezione! No! No no no no!!!!\"", Line_Normal);
 	ClearMessage();
@@ -1856,10 +1856,10 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200681", 256, TRUE);
 	OutputLine(NULL, "「私は………、あの異常な中で、確かにオヤシロさまに会ったんです。",
 		   NULL, "\"In quel momento... sono sicura di aver incontrato Oyashiro-sama.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200682", 256, TRUE);
-	OutputLine(NULL, "もちろん、…不気味な『何か』も。",
-		   NULL, " E di aver visto anche 'quelle cose'.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200683", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5065", 256, TRUE);
+	OutputLine(NULL, "もちろん、…うじ虫も。",
+		   NULL, " E di aver visto le larve.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5066", 256, TRUE);
 	OutputLine(NULL, "…………あはははは、…信じられませんよね…？」",
 		   NULL, " ... ahahahah... da non credere, vero...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1911,13 +1911,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s09/09/170900083", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano5003", 256, TRUE);
 	OutputLine(NULL, "「レナちゃんが怖がっている祟り。",
 		   NULL, "\"Mi riferisco alla maledizione.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s09/09/170900084", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano5004", 256, TRUE);
 	OutputLine(NULL, "……つまり、血の中にいたという、…うじ虫。",
 		   NULL, " Alle larve che hai visto nel tuo sangue.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s09/09/170900085", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano5005", 256, TRUE);
 	OutputLine(NULL, "それは、オヤシロさまが言うには、雛見沢にいる限りは大丈夫なんでしょう？」",
 		   NULL, " In base a cosa ti ha detto Oyashiro-sama, sarai al sicuro finché rimarrai a Hinamizawa, giusto?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1942,10 +1942,10 @@ void main()
 	OutputLine(NULL, "あなたは今、雛見沢にいる。",
 		   NULL, " Adesso sei a Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s09/09/170900089", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano5009", 256, TRUE);
 	OutputLine(NULL, "まぁこの図書館は興宮だけど、このくらいの距離ならオヤシロさまも許してくれるわね。",
 		   NULL, "O meglio, nella biblioteca di Okinomiya, ma è vicino a Hinamizawa. Sono certa che a Oyashiro-sama vada bene.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s09/09/170900090", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano5010", 256, TRUE);
 	OutputLine(NULL, "血管の内側に何かが蠢いているなんて感じないでしょ？」",
 		   NULL, " Ormai non senti più niente di strano scorrerti nelle vene, vero?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
